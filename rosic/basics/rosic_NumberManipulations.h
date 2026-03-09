@@ -17,12 +17,19 @@ namespace rosic
   {
     int a;
 
-    #ifndef LINUX
+    #if defined(_MSC_VER)
     __asm
     {
       fld x;
       fistp a;
     }
+    #elif defined(__GNUC__) && !defined(LINUX)
+    __asm__ __volatile__ (
+      "fldl %1\n"
+      "fistpl %0\n"
+      : "=m" (a)
+      : "m" (x)
+    );
     #else
     a = (int) x;
     #endif
@@ -39,7 +46,7 @@ namespace rosic
     const float round_to_nearest = 0.5f;
     int i;
 
-    #ifndef LINUX
+    #if defined(_MSC_VER)
     __asm
     {
       fld x;
@@ -48,6 +55,16 @@ namespace rosic
       fistp i;
       sar i, 1;
     }
+    #elif defined(__GNUC__) && !defined(LINUX)
+    __asm__ __volatile__ (
+      "fldl %1\n"
+      "fadd %%st(0), %%st(0)\n"
+      "fadds %2\n"
+      "fistpl %0\n"
+      "sarl $1, %0\n"
+      : "=m" (i)
+      : "m" (x), "m" (round_to_nearest)
+    );
     #else
     // preliminary:
     i = (int) floor(x);
@@ -64,7 +81,7 @@ namespace rosic
     const float round_towards_m_i = -0.5f;
     int i;
 
-    #ifndef LINUX
+    #if defined(_MSC_VER)
     __asm
     {
       fld x;
@@ -73,6 +90,16 @@ namespace rosic
       fistp i;
       sar i, 1;
     }
+    #elif defined(__GNUC__) && !defined(LINUX)
+    __asm__ __volatile__ (
+      "fldl %1\n"
+      "fadd %%st(0), %%st(0)\n"
+      "fadds %2\n"
+      "fistpl %0\n"
+      "sarl $1, %0\n"
+      : "=m" (i)
+      : "m" (x), "m" (round_towards_m_i)
+    );
     #else
     i = (int) floor(x);
     #endif
@@ -85,7 +112,7 @@ namespace rosic
     const float round_towards_p_i = -0.5f;
     int i;
 
-    #ifndef LINUX
+    #if defined(_MSC_VER)
     __asm
     {
       fld x;
@@ -94,6 +121,16 @@ namespace rosic
       fistp i;
       sar i, 1;
     }
+    #elif defined(__GNUC__) && !defined(LINUX)
+    __asm__ __volatile__ (
+      "fldl %1\n"
+      "fadd %%st(0), %%st(0)\n"
+      "fsubrs %2\n"
+      "fistpl %0\n"
+      "sarl $1, %0\n"
+      : "=m" (i)
+      : "m" (x), "m" (round_towards_p_i)
+    );
     #else
     return (int) ceil(x);
     #endif
@@ -106,7 +143,7 @@ namespace rosic
     const float round_towards_m_i = -0.5f;
     int i;
 
-    #ifndef LINUX
+    #if defined(_MSC_VER)
     __asm
     {
       fld x;
@@ -116,6 +153,17 @@ namespace rosic
       fistp i;
       sar i, 1;
     }
+    #elif defined(__GNUC__) && !defined(LINUX)
+    __asm__ __volatile__ (
+      "fldl %1\n"
+      "fadd %%st(0), %%st(0)\n"
+      "fabs\n"
+      "fadds %2\n"
+      "fistpl %0\n"
+      "sarl $1, %0\n"
+      : "=m" (i)
+      : "m" (x), "m" (round_towards_m_i)
+    );
     #else
     i = 0;
     DEBUG_BREAK; // this isn't implemented on linux as of yet

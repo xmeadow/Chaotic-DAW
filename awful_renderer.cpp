@@ -417,7 +417,7 @@ DWORD Renderer::RNDR_ThreadProc(LPVOID lpParam)
     RNDR_StreamCode ret_code = RNDR_Abort;
     RndrCallback*   pCallBack = pThis->pCallBack;
     //length of the buffer should be no greater than total frames count
-    unsigned long	uiBufLength = min(pThis->config.inbuff_len, unsigned long(pThis->ullSongFrameLength - pThis->ullCurrentFramePos));
+    unsigned long	uiBufLength = (pThis->config.inbuff_len < (unsigned long)(pThis->ullSongFrameLength - pThis->ullCurrentFramePos)) ? pThis->config.inbuff_len : (unsigned long)(pThis->ullSongFrameLength - pThis->ullCurrentFramePos);
     unsigned int    counter = 0;
 
     if (NULL != pCallBack)
@@ -433,7 +433,7 @@ DWORD Renderer::RNDR_ThreadProc(LPVOID lpParam)
             ++counter;
 
             pThis->ullCurrentFramePos += uiBufLength;
-            uiBufLength = min(uiBufLength, unsigned long(pThis->ullSongFrameLength - pThis->ullCurrentFramePos + 50));
+            uiBufLength = (uiBufLength < (unsigned long)(pThis->ullSongFrameLength - pThis->ullCurrentFramePos + 50)) ? uiBufLength : (unsigned long)(pThis->ullSongFrameLength - pThis->ullCurrentFramePos + 50);
 
             if (counter > 300)
             {

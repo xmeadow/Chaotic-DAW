@@ -717,26 +717,11 @@ CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.s"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/delaylines/rosic_PingPongEcho.cpp -o CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.s
 
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/delaylines/rosic_PingPongEcho1.cpp
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/delaylines/rosic_PingPongEcho1.cpp
-
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.i"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/delaylines/rosic_PingPongEcho1.cpp > CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.i
-
-CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.s"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/delaylines/rosic_PingPongEcho1.cpp -o CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.s
-
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.i: cmake_force
@@ -751,7 +736,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj: CMakeFiles/C
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_Compressor.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_Compressor.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.i: cmake_force
@@ -766,7 +751,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj: C
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_DynamicsProcessorBase.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_DynamicsProcessorBase.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.i: cmake_force
@@ -781,7 +766,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj: CMak
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_SoftKneeCompressor.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/dynamics/rosic_SoftKneeCompressor.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_SoftKneeCompressor.cpp.i: cmake_force
@@ -796,7 +781,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj: CMakeFiles/Ch
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_BitCrusher.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_BitCrusher.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_BitCrusher.cpp.i: cmake_force
@@ -811,7 +796,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj: CMakeFiles/Chaoti
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Chorus.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Chorus.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Chorus.cpp.i: cmake_force
@@ -826,7 +811,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj: CMak
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_CombResonatorStereo.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_CombResonatorStereo.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombResonatorStereo.cpp.i: cmake_force
@@ -841,7 +826,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_CombStereoizer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_CombStereoizer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_CombStereoizer.cpp.i: cmake_force
@@ -856,7 +841,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj: CMakeFiles/Chaot
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Flanger.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Flanger.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Flanger.cpp.i: cmake_force
@@ -871,7 +856,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj: CMakeFi
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_FrequencyShifter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_FrequencyShifter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_FrequencyShifter.cpp.i: cmake_force
@@ -886,7 +871,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj: CMakeFi
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_ModulationEffect.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_ModulationEffect.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_ModulationEffect.cpp.i: cmake_force
@@ -901,7 +886,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj: CMakeFiles/Chaoti
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Phaser.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Phaser.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Phaser.cpp.i: cmake_force
@@ -916,7 +901,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj: CMakeFiles/Chaoti
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Reverb.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Reverb.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Reverb.cpp.i: cmake_force
@@ -931,7 +916,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_StereoPan.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_StereoPan.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoPan.cpp.i: cmake_force
@@ -946,7 +931,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj: CMakeFiles/C
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_StereoWidth.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_StereoWidth.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_StereoWidth.cpp.i: cmake_force
@@ -961,7 +946,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj: CMakeFiles/Chaot
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Tremolo.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Tremolo.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Tremolo.cpp.i: cmake_force
@@ -976,7 +961,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj: CMakeFiles/Chaot
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Vibrato.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_Vibrato.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_Vibrato.cpp.i: cmake_force
@@ -991,7 +976,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj: CMakeFiles/Chaoti
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_WahWah.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_WahWah.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WahWah.cpp.i: cmake_force
@@ -1006,7 +991,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj: CMakeFiles/Ch
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_WaveShaper.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/effects/rosic_WaveShaper.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/effects/rosic_WaveShaper.cpp.i: cmake_force
@@ -1021,7 +1006,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj: CMakeFiles/
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_AllpassChain.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_AllpassChain.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_AllpassChain.cpp.i: cmake_force
@@ -1036,7 +1021,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj: CMakeFiles/Ch
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadBase.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadBase.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadBase.cpp.i: cmake_force
@@ -1051,7 +1036,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadCascade.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadCascade.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadCascade.cpp.i: cmake_force
@@ -1066,7 +1051,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadDesigner.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadDesigner.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadDesigner.cpp.i: cmake_force
@@ -1081,7 +1066,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadMonoDF1.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadMonoDF1.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadMonoDF1.cpp.i: cmake_force
@@ -1096,7 +1081,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadStereoDF1.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadStereoDF1.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF1.cpp.i: cmake_force
@@ -1111,7 +1096,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadStereoDF2.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_BiquadStereoDF2.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_BiquadStereoDF2.cpp.i: cmake_force
@@ -1126,7 +1111,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj: CMakeFiles/Ch
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CombFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CombFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombFilter.cpp.i: cmake_force
@@ -1141,7 +1126,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CombResonator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CombResonator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CombResonator.cpp.i: cmake_force
@@ -1156,7 +1141,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj: CMak
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverBruteForce.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverBruteForce.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverBruteForce.cpp.i: cmake_force
@@ -1171,7 +1156,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj: CMakeFiles/
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverFFT.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverFFT.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverFFT.cpp.i: cmake_force
@@ -1186,7 +1171,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj: CMa
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverPartitioned.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ConvolverPartitioned.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ConvolverPartitioned.cpp.i: cmake_force
@@ -1201,7 +1186,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CookbookFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CookbookFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CookbookFilter.cpp.i: cmake_force
@@ -1216,7 +1201,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CrossOver.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_CrossOver.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_CrossOver.cpp.i: cmake_force
@@ -1231,7 +1216,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DampingFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DampingFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DampingFilter.cpp.i: cmake_force
@@ -1246,7 +1231,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj: CMakeFi
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DirectFormFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DirectFormFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DirectFormFilter.cpp.i: cmake_force
@@ -1261,7 +1246,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DualTwoPoleFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_DualTwoPoleFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_DualTwoPoleFilter.cpp.i: cmake_force
@@ -1276,7 +1261,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticQuarterBandFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticQuarterBandFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticQuarterBandFilter.cpp.i: cmake_force
@@ -1291,7 +1276,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj: CM
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticSubBandFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticSubBandFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilter.cpp.i: cmake_force
@@ -1306,7 +1291,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.c
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EllipticSubBandFilterDirectForm.cpp.i: cmake_force
@@ -1321,7 +1306,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EngineersFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_EngineersFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_EngineersFilter.cpp.i: cmake_force
@@ -1336,7 +1321,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_Equalizer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_Equalizer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_Equalizer.cpp.i: cmake_force
@@ -1351,7 +1336,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_FilterCoefficientConversions.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_FilterCoefficientConversions.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FilterCoefficientConversions.cpp.i: cmake_force
@@ -1366,7 +1351,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_FourPoleFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_FourPoleFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_FourPoleFilter.cpp.i: cmake_force
@@ -1381,7 +1366,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.ob
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_HighOrderEqualizerDesigner.cpp.i: cmake_force
@@ -1396,7 +1381,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj: CMakeFiles/
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LadderFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LadderFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LadderFilter.cpp.i: cmake_force
@@ -1411,7 +1396,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LeakyIntegrator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LeakyIntegrator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LeakyIntegrator.cpp.i: cmake_force
@@ -1426,7 +1411,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LowpassHighpass.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LowpassHighpass.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpass.cpp.i: cmake_force
@@ -1441,7 +1426,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj: CM
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LowpassHighpassStereo.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LowpassHighpassStereo.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LowpassHighpassStereo.cpp.i: cmake_force
@@ -1456,7 +1441,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LpfHpfApf.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_LpfHpfApf.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_LpfHpfApf.cpp.i: cmake_force
@@ -1471,7 +1456,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_MultiModeFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_MultiModeFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_MultiModeFilter.cpp.i: cmake_force
@@ -1486,7 +1471,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_NyquistBlocker.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_NyquistBlocker.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_NyquistBlocker.cpp.i: cmake_force
@@ -1501,7 +1486,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_OnePoleFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_OnePoleFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilter.cpp.i: cmake_force
@@ -1516,7 +1501,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj: CMak
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_OnePoleFilterStereo.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_OnePoleFilterStereo.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_OnePoleFilterStereo.cpp.i: cmake_force
@@ -1531,7 +1516,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj: 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_PoleZeroTransformations.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_PoleZeroTransformations.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PoleZeroTransformations.cpp.i: cmake_force
@@ -1546,7 +1531,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_PrototypeDesigner.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_PrototypeDesigner.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_PrototypeDesigner.cpp.i: cmake_force
@@ -1561,7 +1546,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_QuadratureNetwork.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_QuadratureNetwork.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_QuadratureNetwork.cpp.i: cmake_force
@@ -1576,7 +1561,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj: CMakeFiles/
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TeeBeeFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TeeBeeFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TeeBeeFilter.cpp.i: cmake_force
@@ -1591,7 +1576,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj: CMakeFiles/C
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ToneControl.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_ToneControl.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_ToneControl.cpp.i: cmake_force
@@ -1606,7 +1591,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TwoPoleBandpass.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TwoPoleBandpass.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleBandpass.cpp.i: cmake_force
@@ -1621,7 +1606,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TwoPoleFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_TwoPoleFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_TwoPoleFilter.cpp.i: cmake_force
@@ -1636,7 +1621,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_VowelFilterStereo.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_VowelFilterStereo.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_VowelFilterStereo.cpp.i: cmake_force
@@ -1651,7 +1636,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_WhiteToPinkFilter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/filters/rosic_WhiteToPinkFilter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/filters/rosic_WhiteToPinkFilter.cpp.i: cmake_force
@@ -1666,7 +1651,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj: CMakeF
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/generators/rosic_SineOscillator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/generators/rosic_SineOscillator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_SineOscillator.cpp.i: cmake_force
@@ -1681,7 +1666,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj: CMakeFiles/
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/generators/rosic_WaveTable.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/generators/rosic_WaveTable.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/generators/rosic_WaveTable.cpp.i: cmake_force
@@ -1696,7 +1681,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj: CMakeFi
 CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/infrastructure/rosic_MutexLock.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/infrastructure/rosic_MutexLock.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/infrastructure/rosic_MutexLock.cpp.i: cmake_force
@@ -1711,7 +1696,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj: CMakeFiles/Chaotic-
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_Complex.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_Complex.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_Complex.cpp.i: cmake_force
@@ -1726,7 +1711,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_ComplexFunctions.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_ComplexFunctions.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_ComplexFunctions.cpp.i: cmake_force
@@ -1741,7 +1726,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj: CMakeFiles
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_IntegerFunctions.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_IntegerFunctions.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_IntegerFunctions.cpp.i: cmake_force
@@ -1756,7 +1741,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_PrimeNumbers.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_PrimeNumbers.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_PrimeNumbers.cpp.i: cmake_force
@@ -1771,7 +1756,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctionEvaluationAlgorithms.cpp.i: cmake_force
@@ -1786,7 +1771,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj: CMakeFiles/Ch
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_RealFunctions.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/math/rosic_RealFunctions.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/math/rosic_RealFunctions.cpp.i: cmake_force
@@ -1801,7 +1786,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj: C
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_BreakpointModulator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_BreakpointModulator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_BreakpointModulator.cpp.i: cmake_force
@@ -1816,7 +1801,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj: CMa
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_EnvelopeGenerator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_EnvelopeGenerator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_EnvelopeGenerator.cpp.i: cmake_force
@@ -1831,7 +1816,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_LowFrequencyOscillator.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/modulators/rosic_LowFrequencyOscillator.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/modulators/rosic_LowFrequencyOscillator.cpp.i: cmake_force
@@ -1846,7 +1831,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj: CMakeFile
 CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/others/rosic_SlewRateLimiter.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/others/rosic_SlewRateLimiter.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/others/rosic_SlewRateLimiter.cpp.i: cmake_force
@@ -1861,7 +1846,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_AlgorithmicWaveformRenderer.cpp.i: cmake_force
@@ -1876,7 +1861,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_MultiSegmentWaveformRenderer.cpp.i: cmake_force
@@ -1891,7 +1876,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.ob
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_StandardWaveformRenderer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_StandardWaveformRenderer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_StandardWaveformRenderer.cpp.i: cmake_force
@@ -1906,7 +1891,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj: CMakeFi
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_WaveformBuffer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_WaveformBuffer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformBuffer.cpp.i: cmake_force
@@ -1921,7 +1906,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj: CMake
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_WaveformRenderer.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/rendering/rosic_WaveformRenderer.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/rendering/rosic_WaveformRenderer.cpp.i: cmake_force
@@ -1936,7 +1921,7 @@ CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.o
 CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/transforms/rosic_FourierTransformerRadix2.cpp
 CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/rosic/transforms/rosic_FourierTransformerRadix2.cpp
 
 CMakeFiles/Chaotic-DAW.dir/rosic/transforms/rosic_FourierTransformerRadix2.cpp.i: cmake_force
@@ -1951,7 +1936,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj: CMakeFiles/Chaotic-DAW.d
 CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/aripix.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/aripix.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/aripix.cpp.i: cmake_force
@@ -1966,7 +1951,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj: CMakeFiles/Chaotic-DAW.dir/
 CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/big.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/big.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/big.cpp.i: cmake_force
@@ -1981,7 +1966,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj: CMakeFiles/Chaotic-DAW.dir
 CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/Bold.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/Bold.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/Bold.cpp.i: cmake_force
@@ -1996,7 +1981,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj: CMakeFiles/Chaotic-DAW.dir
 CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/dpix.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/dpix.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/dpix.cpp.i: cmake_force
@@ -2011,7 +1996,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj: CMakeFiles/Chaotic-DAW.di
 CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/fixed.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/fixed.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/fixed.cpp.i: cmake_force
@@ -2026,7 +2011,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj: CMakeFiles/Chaotic-DAW.d
 CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/images.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/images.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/images.cpp.i: cmake_force
@@ -2041,7 +2026,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj: CMakeFiles/Chaotic-DAW.
 CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/instrum.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/instrum.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/instrum.cpp.i: cmake_force
@@ -2056,7 +2041,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj: CMakeFiles/Chao
 CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/metronome_waves.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/metronome_waves.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/metronome_waves.cpp.i: cmake_force
@@ -2071,7 +2056,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj: CMakeFiles/Chaotic-DAW.di
 CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/mfont.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/mfont.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/mfont.cpp.i: cmake_force
@@ -2086,7 +2071,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj: CMakeFiles/Chaotic-DAW.di
 CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/projs.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/projs.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/projs.cpp.i: cmake_force
@@ -2101,7 +2086,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj: CMakeFiles/Chaotic-DAW.dir
 CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/roxx.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/roxx.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/roxx.cpp.i: cmake_force
@@ -2116,7 +2101,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj: CMakeFiles/Chaotic-DAW.d
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/tahoma.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/tahoma.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tahoma.cpp.i: cmake_force
@@ -2131,7 +2116,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj: CMakeFiles/Chaotic-DAW.di
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/tiny1.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/tiny1.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny1.cpp.i: cmake_force
@@ -2146,7 +2131,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj: CMakeFiles/Chaotic-DAW.dir
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/tiny.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/tiny.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/tiny.cpp.i: cmake_force
@@ -2161,7 +2146,7 @@ CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj: CMakeFiles/Chaotic-DAW.
 CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/Data\ sources/visitor.cpp
 CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj -c "/home/xmeadow/Desktop/dev/Chaotic-DAW/Data sources/visitor.cpp"
 
 CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.i: cmake_force
@@ -2176,7 +2161,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj: CMakeFiles/Chaot
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_allocation.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_allocation.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.i: cmake_force
@@ -2191,7 +2176,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj: CMakeFiles/Chaot
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_converters.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_converters.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.i: cmake_force
@@ -2206,7 +2191,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj: CMakeFiles/Chaotic-
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_cpuload.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_cpuload.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.i: cmake_force
@@ -2217,26 +2202,11 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.s"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_cpuload.c -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.s
 
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_debugprint.c
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_debugprint.c
-
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.i"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_debugprint.c > CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.i
-
-CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.s"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_debugprint.c -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.s
-
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_dither.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_dither.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.i: cmake_force
@@ -2251,7 +2221,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj: CMakeFiles/Chaotic-DA
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_front.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_front.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.i: cmake_force
@@ -2266,7 +2236,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj: CMakeFiles/Chaotic-
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_process.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_process.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.i: cmake_force
@@ -2281,7 +2251,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj: CMakeFiles/Chaotic-D
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_stream.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_stream.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.i: cmake_force
@@ -2296,7 +2266,7 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj: CMakeFiles/Chaotic-DA
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_trace.c
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_trace.c
 
 CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.i: cmake_force
@@ -2307,11 +2277,26 @@ CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.s"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_trace.c -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.s
 
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_skeleton.c
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj"
+	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_skeleton.c
+
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.i"
+	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_skeleton.c > CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.i
+
+CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.s"
+	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common/pa_skeleton.c -o CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.s
+
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_win_hostapis.c
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_win_hostapis.c
 
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.i: cmake_force
@@ -2326,7 +2311,7 @@ CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj: CMakeFiles/Chaotic-DA
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_win_util.c
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_win_util.c
 
 CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.i: cmake_force
@@ -2337,26 +2322,11 @@ CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.s"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_win_util.c -o CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.s
 
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_x86_plain_converters.c
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_x86_plain_converters.c
-
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.i"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_x86_plain_converters.c > CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.i
-
-CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.s"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win/pa_x86_plain_converters.c -o CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.s
-
 CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/asio/pa_asio.cpp
 CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/asio/pa_asio.cpp
 
 CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.i: cmake_force
@@ -2371,7 +2341,7 @@ CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj: CMakeFil
 CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/asio/iasiothiscallresolver.cpp
 CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/asio/iasiothiscallresolver.cpp
 
 CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.i: cmake_force
@@ -2386,7 +2356,7 @@ CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj: CMakeFiles/Cha
 CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/wasapi/pa_win_wasapi.cpp
 CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/wasapi/pa_win_wasapi.cpp
 
 CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.i: cmake_force
@@ -2401,7 +2371,7 @@ CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj: CMakeFiles/Chaotic-D
 CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/wmme/pa_win_wmme.c
 CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/wmme/pa_win_wmme.c
 
 CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.i: cmake_force
@@ -2412,41 +2382,11 @@ CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.s"
 	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/wmme/pa_win_wmme.c -o CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.s
 
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds.c
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds.c
-
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.i"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds.c > CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.i
-
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.s"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds.c -o CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.s
-
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj: CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds_dynlink.c
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj -MF CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj.d -o CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds_dynlink.c
-
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.i"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds_dynlink.c > CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.i
-
-CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.s"
-	/usr/bin/i686-w64-mingw32-gcc-win32 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/External/dsound/pa_win_ds_dynlink.c -o CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.s
-
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asio.cpp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asio.cpp
 
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.i: cmake_force
@@ -2457,26 +2397,11 @@ CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.s"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asio.cpp -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.s
 
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asiodrvr.cpp
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asiodrvr.cpp
-
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.i"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asiodrvr.cpp > CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.i
-
-CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.s"
-	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/asiodrvr.cpp -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.s
-
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/combase.cpp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common/combase.cpp
 
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.i: cmake_force
@@ -2491,7 +2416,7 @@ CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj: CMakeFiles/Chaotic
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host/asiodrivers.cpp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host/asiodrivers.cpp
 
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.i: cmake_force
@@ -2506,7 +2431,7 @@ CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj: CMakeFiles/Chaotic
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj: CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj: /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host/pc/asiolist.cpp
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj: CMakeFiles/Chaotic-DAW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj"
 	/usr/bin/i686-w64-mingw32-g++-win32 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj -MF CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj.d -o CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj -c /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host/pc/asiolist.cpp
 
 CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.i: cmake_force
@@ -2519,7 +2444,7 @@ CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.s: cmake_force
 
 CMakeFiles/Chaotic-DAW.dir/Awful.rc.res: CMakeFiles/Chaotic-DAW.dir/flags.make
 CMakeFiles/Chaotic-DAW.dir/Awful.rc.res: /home/xmeadow/Desktop/dev/Chaotic-DAW/Awful.rc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building RC object CMakeFiles/Chaotic-DAW.dir/Awful.rc.res"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building RC object CMakeFiles/Chaotic-DAW.dir/Awful.rc.res"
 	i686-w64-mingw32-windres -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) /home/xmeadow/Desktop/dev/Chaotic-DAW/Awful.rc CMakeFiles/Chaotic-DAW.dir/Awful.rc.res
 
 # Object files for target Chaotic-DAW
@@ -2567,7 +2492,6 @@ Chaotic__DAW_OBJECTS = \
 "CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_DelayLineStereo.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_IntegerDelayLine.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.obj" \
-"CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj" \
@@ -2667,23 +2591,19 @@ Chaotic__DAW_OBJECTS = \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj" \
-"CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj" \
+"CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj" \
-"CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj" \
-"CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj" \
-"CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj" \
 "CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj" \
-"CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj" \
 "CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj" \
@@ -2735,7 +2655,6 @@ Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_BasicIntegerD
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_DelayLineStereo.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_IntegerDelayLine.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_Compressor.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/rosic/dynamics/rosic_DynamicsProcessorBase.cpp.obj
@@ -2835,23 +2754,19 @@ Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/Data_sources/visitor.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_allocation.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_converters.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_dither.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_front.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_stream.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.obj
+Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_hostapis.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/asio/pa_asio.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/asio/iasiothiscallresolver.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/wasapi/pa_win_wasapi.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/wmme/pa_win_wmme.c.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.obj
-Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/combase.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/asiodrivers.cpp.obj
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/host/pc/asiolist.cpp.obj
@@ -2861,7 +2776,7 @@ Chaotic-DAW.exe: /home/xmeadow/Desktop/dev/Chaotic-DAW/libsndfile-1.lib
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/linkLibs.rsp
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/objects1.rsp
 Chaotic-DAW.exe: CMakeFiles/Chaotic-DAW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Linking CXX executable Chaotic-DAW.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Linking CXX executable Chaotic-DAW.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Chaotic-DAW.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -89,7 +89,7 @@ void drawGlassLozenge (Graphics& g,
                             const bool flatOnLeft,
                             const bool flatOnRight,
                             const bool flatOnTop,
-                            const bool flatOnBottom) throw()
+                            const bool flatOnBottom)
 {
     if (width <= outlineThickness || height <= outlineThickness)
         return;
@@ -2398,8 +2398,8 @@ ConfigComponent::ConfigComponent()      //: quitButton(0)
     pBufferSlider->setSliderStyle(ASlider::LinearHorizontal);
     pBufferSlider->setTextBoxStyle(ASlider::TextBoxPositioned, true, 180, 20);
     pBufferSlider->setTextBoxIsEditable(false);
-    unsigned int uiTime = unsigned int(pBufferSlider->getValue());
-    unsigned int uiFreq = unsigned int(fSampleRate/1000);
+    unsigned int uiTime = (unsigned int)(pBufferSlider->getValue());
+    unsigned int uiFreq = (unsigned int)(fSampleRate/1000);
     uiTime = uiTime/ uiFreq;
     pBufferSlider->setTextValueSuffix(String::formatted(T(" samples")));
     pBufferSlider->setTextBoxXY(39, 0);
@@ -2662,8 +2662,8 @@ void ConfigComponent::sliderValueChanged (ASlider* slider)
     if (slider == this->pBufferSlider)
     {
         //When the slider value is changed, we should update the bufer size label in ms
-        unsigned int uiTime = unsigned int(pBufferSlider->getValue());
-        unsigned int uiFreq = unsigned int(fSampleRate/1000);
+        unsigned int uiTime = (unsigned int)(pBufferSlider->getValue());
+        unsigned int uiFreq = (unsigned int)(fSampleRate/1000);
         uiTime = uiTime/ uiFreq;
         pBufferSlider->setTextValueSuffix(String::formatted(T(" samples")));
     }
@@ -2799,8 +2799,8 @@ void ConfigComponent::buttonClicked(Button* buttonThatWasClicked)
 T("Changing sample rate requires current project to be reopened.\n\nAre you sure you want to proceed?")))
             {
                 //Update slider suffix
-                unsigned int uiTime = unsigned int(pBufferSlider->getValue());
-                unsigned int uiFreq = unsigned int(tmpFreq/1000);
+                unsigned int uiTime = (unsigned int)(pBufferSlider->getValue());
+                unsigned int uiFreq = (unsigned int)(tmpFreq/1000);
 
                 uiTime = uiTime/ uiFreq;
 
@@ -5544,7 +5544,7 @@ void ASlider::setText(const String& newText,
         valueBox->setText (newText, broadcastChangeMessage);
 }
 
-void ASlider::setTextColour(Colour& newcolour)
+void ASlider::setTextColour(const Colour& newcolour)
 {
     if (valueBox != 0)
         valueBox->setColour(Label::textColourId, newcolour);

@@ -2,6 +2,7 @@
 #define rosic_String_h
 
 #include <string>
+#include <cstring>
 #include <climits>
 #include "../basics/rosic_FunctionTemplates.h"
 

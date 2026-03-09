@@ -4,19 +4,19 @@
 # compile C with /usr/bin/i686-w64-mingw32-gcc-win32
 # compile CXX with /usr/bin/i686-w64-mingw32-g++-win32
 # compile RC with i686-w64-mingw32-windres
-C_DEFINES = -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DUNICODE -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_UNICODE -D_WINDOWS
+C_DEFINES = -DJUCE_OPENGL=0 -DJUCE_STRINGS_ARE_UNICODE=0 -DJUCE_WEB_BROWSER=0 -DPA_NO_DS=1 -DPA_USE_ASIO=1 -DPA_USE_DS=0 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS
 
 C_INCLUDES = @CMakeFiles/Chaotic-DAW.dir/includes_C.rsp
 
-C_FLAGS = -w -Wno-deprecated -fpermissive -Wa,-mbig-obj
+C_FLAGS = -w -Wno-deprecated -fpermissive -fno-check-new -fno-enforce-eh-specs -Wa,-mbig-obj
 
-CXX_DEFINES = -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DUNICODE -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_UNICODE -D_WINDOWS
+CXX_DEFINES = -DJUCE_OPENGL=0 -DJUCE_STRINGS_ARE_UNICODE=0 -DJUCE_WEB_BROWSER=0 -DPA_NO_DS=1 -DPA_USE_ASIO=1 -DPA_USE_DS=0 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS
 
 CXX_INCLUDES = @CMakeFiles/Chaotic-DAW.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=gnu++11 -w -Wno-deprecated -fpermissive -Wa,-mbig-obj
+CXX_FLAGS = -std=gnu++11 -w -Wno-deprecated -fpermissive -fno-check-new -fno-enforce-eh-specs -Wa,-mbig-obj
 
-RC_DEFINES = -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DUNICODE -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_UNICODE -D_WINDOWS
+RC_DEFINES = -DJUCE_OPENGL=0 -DJUCE_STRINGS_ARE_UNICODE=0 -DJUCE_WEB_BROWSER=0 -DPA_NO_DS=1 -DPA_USE_ASIO=1 -DPA_USE_DS=0 -DPA_USE_WASAPI=1 -DPA_USE_WMME=1 -DWIN32 -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS
 
 RC_INCLUDES = -I /home/xmeadow/Desktop/dev/Chaotic-DAW -I /home/xmeadow/Desktop/dev/Chaotic-DAW/vst2compat -I /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/common -I /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host -I /home/xmeadow/Desktop/dev/Chaotic-DAW/ASIOSDK2/host/pc -I /home/xmeadow/Desktop/dev/Chaotic-DAW/External/include -I /home/xmeadow/Desktop/dev/Chaotic-DAW/External/asio -I /home/xmeadow/Desktop/dev/Chaotic-DAW/External/common -I /home/xmeadow/Desktop/dev/Chaotic-DAW/External/win -I /home/xmeadow/Desktop/dev/Chaotic-DAW/juce -I /home/xmeadow/Desktop/dev/Chaotic-DAW/vstsdk3 -I /home/xmeadow/Desktop/dev/Chaotic-DAW/vstsdk3/pluginterfaces
 

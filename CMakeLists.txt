@@ -42,15 +42,16 @@ set(PORTAUDIO_CORE
     "${ROOT}/External/common/pa_allocation.c"
     "${ROOT}/External/common/pa_converters.c"
     "${ROOT}/External/common/pa_cpuload.c"
-    "${ROOT}/External/common/pa_debugprint.c"
+    # "${ROOT}/External/common/pa_debugprint.c"  # Causes duplicate symbol with pa_front.c
     "${ROOT}/External/common/pa_dither.c"
     "${ROOT}/External/common/pa_front.c"
     "${ROOT}/External/common/pa_process.c"
     "${ROOT}/External/common/pa_stream.c"
     "${ROOT}/External/common/pa_trace.c"
+    "${ROOT}/External/common/pa_skeleton.c"
     "${ROOT}/External/win/pa_win_hostapis.c"
     "${ROOT}/External/win/pa_win_util.c"
-    "${ROOT}/External/win/pa_x86_plain_converters.c"
+    # "${ROOT}/External/win/pa_x86_plain_converters.c"  # MSVC assembly, not compatible with MinGW/GCC
 )
 
 # ── PortAudio backends ────────────────────────────────────────────────────────
@@ -59,14 +60,14 @@ set(PORTAUDIO_BACKENDS
     "${ROOT}/External/asio/iasiothiscallresolver.cpp"
     "${ROOT}/External/wasapi/pa_win_wasapi.cpp"
     "${ROOT}/External/wmme/pa_win_wmme.c"
-    "${ROOT}/External/dsound/pa_win_ds.c"
-    "${ROOT}/External/dsound/pa_win_ds_dynlink.c"
+    # "${ROOT}/External/dsound/pa_win_ds.c"
+    # "${ROOT}/External/dsound/pa_win_ds_dynlink.c"
 )
 
 # ── ASIO SDK sources (needed by PortAudio ASIO backend) ───────────────────────
 set(ASIO_SOURCES
     "${ROOT}/ASIOSDK2/common/asio.cpp"
-    "${ROOT}/ASIOSDK2/common/asiodrvr.cpp"
+    # "${ROOT}/ASIOSDK2/common/asiodrvr.cpp"  # Has #error do not use this for Windows
     "${ROOT}/ASIOSDK2/common/combase.cpp"
     "${ROOT}/ASIOSDK2/host/asiodrivers.cpp"
     "${ROOT}/ASIOSDK2/host/pc/asiolist.cpp"
@@ -151,16 +152,24 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     WIN32
     _WINDOWS
-    UNICODE
-    _UNICODE
     # PortAudio backend selection
     PA_USE_ASIO=1
     PA_USE_WASAPI=1
     PA_USE_WMME=1
-    PA_USE_DS=1
+    PA_USE_DS=0
+    PA_NO_DS=1
     # Suppress some common warnings from old code
     _CRT_SECURE_NO_WARNINGS
     _CRT_NONSTDC_NO_WARNINGS
+    # Disable JUCE Unicode to avoid T macro conflict with rosic templates
+    JUCE_STRINGS_ARE_UNICODE=0
+    # Disable JUCE WebBrowser component to avoid missing Exdisp.h header
+    JUCE_WEB_BROWSER=0
+    # Disable JUCE OpenGL to avoid missing gl/gl.h header
+    JUCE_OPENGL=0
+
+
+
 )
 
 # ── Compiler flags ────────────────────────────────────────────────────────────
@@ -175,6 +184,8 @@ elseif(MINGW OR CMAKE_COMPILER_IS_GNUCXX)
         -w                  # suppress warnings (old code has many)
         -Wno-deprecated
         -fpermissive        # old JUCE and project code needs this
+        -fno-check-new      # disable checking for out-of-memory on new
+        -fno-enforce-eh-specs # don't enforce exception specs
         # JUCE amalgamated is large – allow large objects
         -Wa,-mbig-obj
     )
@@ -196,6 +207,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     ws2_32
     dsound
     dxguid
+    version
+    wininet
+    vfw32
 )
 
 # ── Bundled libsndfile ────────────────────────────────────────────────────────

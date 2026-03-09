@@ -524,6 +524,7 @@ if (hModule)                            /* if there, get its main() function */
 
 if (pMain)                              /* initialize effect                 */
 {
+#ifdef _MSC_VER
     __try
     {
         pEffect = pMain(pHost->AudioMasterCallback);
@@ -532,6 +533,18 @@ if (pMain)                              /* initialize effect                 */
     {
         pEffect = NULL;
     }
+#else
+    // For non-MSVC compilers, use standard try/catch
+    // Note: This won't catch hardware exceptions like SEH does
+    try
+    {
+        pEffect = pMain(pHost->AudioMasterCallback);
+    }
+    catch (...)
+    {
+        pEffect = NULL;
+    }
+#endif
 
     if (pEffect == NULL)
     {
@@ -691,6 +704,7 @@ long CEffect::EffDispatch
 
     if (pEffect)
     {
+#ifdef _MSC_VER
         __try
         {
             ret = pEffect->dispatcher(pEffect, opCode, index, value, ptr, opt);
@@ -699,6 +713,18 @@ long CEffect::EffDispatch
         {
             ret = 0;
         }
+#else
+        // For non-MSVC compilers, use standard try/catch
+        // Note: This won't catch hardware exceptions like SEH does
+        try
+        {
+            ret = pEffect->dispatcher(pEffect, opCode, index, value, ptr, opt);
+        }
+        catch (...)
+        {
+            ret = 0;
+        }
+#endif
     }
 
     return ret;

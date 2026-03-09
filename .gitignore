@@ -1,0 +1,161 @@
+# ==============================================================================
+# Chaotic-DAW Project .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Build Outputs
+# ------------------------------------------------------------------------------
+# CMake build directories
+build*/
+build_*/
+build-*/
+bin*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Windows executables and libraries (except required dependencies)
+*.exe
+*.exp
+*.pdb
+*.ilk
+*.idb
+
+# Object files
+*.o
+*.obj
+
+# Resource files (generated)
+*.res
+
+# ------------------------------------------------------------------------------
+# IDE and Project Files
+# ------------------------------------------------------------------------------
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.vcproj
+*.suo
+*.user
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+x64/
+x86/
+[Ww]in32/
+
+# Code::Blocks
+*.cbp
+*.depend
+*.layout
+*.workspace
+
+# ------------------------------------------------------------------------------
+# Project-Specific Generated Files
+# ------------------------------------------------------------------------------
+# Build directories
+build_win32/
+build*/
+build-*/
+External/test/
+
+# Precompiled headers
+*.pch
+
+# Debug files
+*.dbg
+*.debug
+
+# ------------------------------------------------------------------------------
+# User Data and Cache
+# ------------------------------------------------------------------------------
+# Audio project cache
+*.cache
+*.tmp
+*.temp
+
+# Logs
+*.log
+logs/
+Logs/
+
+# User settings
+*.userprefs
+config.user.ini
+
+# ------------------------------------------------------------------------------
+# System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+._*
+
+# Linux
+*~
+*.swp
+*.swo
+
+# ------------------------------------------------------------------------------
+# Dependencies (should be submodules)
+# ------------------------------------------------------------------------------
+# Note: ASIOSDK2/ and vstsdk3/ are submodules, so don't ignore them
+# But ignore any build artifacts within them
+ASIOSDK2/build*/
+vstsdk3/build*/
+
+# Keep required DLL dependencies (they're part of the project)
+!*.lib
+
+# ------------------------------------------------------------------------------
+# Temporary and Backup Files
+# ------------------------------------------------------------------------------
+*.bak
+*.backup
+*.~*
+*~
+
+# ------------------------------------------------------------------------------
+# Audio Exports (user-generated)
+# ------------------------------------------------------------------------------
+# These are user creations, not part of source code
+Exports/
+Renders/
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# ------------------------------------------------------------------------------
+# Plugin Cache
+# ------------------------------------------------------------------------------
+Plugins/Cache/
+*.vstcache
+
+# ------------------------------------------------------------------------------
+# Documentation (generated)
+# ------------------------------------------------------------------------------
+docs/_build/
+docs/_site/
+
+# ------------------------------------------------------------------------------
+# Testing
+# ------------------------------------------------------------------------------
+TestResults/
+*.TestResult.xml
+
+# ------------------------------------------------------------------------------
+# Archives
+# ------------------------------------------------------------------------------
+*.7z
+*.zip
+*.rar
+*.tar.gz

@@ -228,10 +228,10 @@ class CComponent : public Component,
 public:
     virtual ASlider* PlaceSliderWithLabel(char* txt, Parameter* param, int x, int y, int w = 83, int h = 22);
     virtual AToggleButton* PlaceToggleWithLabel(char* txt, BoolParam* bparam, int tgtype, int group, int x, int y, int w, int h);
-    virtual ALabel* PlaceSmallLabel(char* txt, int x, int y, Colour& clr);
-    virtual ALabel* PlaceBigLabel(char* txt, int x, int y, Colour& clr);
-    virtual ALabel* PlaceTxtLabel(char* txt, int x, int y, Colour& clr);
-    virtual ALabel* PlaceTxtLabel1(char* txt, int x, int y, Colour& clr);
+    virtual ALabel* PlaceSmallLabel(char* txt, int x, int y, const Colour& clr);
+    virtual ALabel* PlaceBigLabel(char* txt, int x, int y, const Colour& clr);
+    virtual ALabel* PlaceTxtLabel(char* txt, int x, int y, const Colour& clr);
+    virtual ALabel* PlaceTxtLabel1(char* txt, int x, int y, const Colour& clr);
     void sliderValueChanged(ASlider* slider) {};
     void buttonClicked(Button* button) {};
 };

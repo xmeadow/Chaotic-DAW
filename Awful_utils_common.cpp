@@ -44,10 +44,10 @@ extern long     Tick2Frame(float tick);
 extern float    Tick2Second(float tick);
 extern float    Frame2Tick(unsigned long frame);
 extern float    Frame2Tick(double frame);
-extern inline float Interpolate_Line(double x1, float y1, double x2, float y2, double x3);
+extern float Interpolate_Line(double x1, float y1, double x2, float y2, double x3);
 extern int      Calc_PixLength(long num_frames, long sample_rate, float tickwidth);
 extern float    Calc_PercentPan(float pan_percent);
-extern inline float    Div100(float percent);
+extern float    Div100(float percent);
 extern void     Vanish(Element* el);
 extern void     Vanish_CleanUp();
 extern int      RoundDouble(double val);
@@ -794,7 +794,7 @@ float Calc_PercentPan(float pan_percent)
 
 ///////////////////////////
 // Returns float edinitsa-based value
-inline float Div100(float percent)
+float Div100(float percent)
 {
     return(percent/100);
 }
@@ -803,7 +803,7 @@ inline float Div100(float percent)
 // Returns linearly interpolated value between two values. Return value is y3 for given x3
 // Interval is defined by [x1,x2] where x3 is any point on this interval
 // y - is amplitude value of the signal being interpolated
-INLINE float Interpolate_Line(double x1, float y1, double x2, float y2, double x3)
+float Interpolate_Line(double x1, float y1, double x2, float y2, double x3)
 {
     return (float)(y1 + (x3 - x1)*((y2 - y1)/(x2 - x1)));
 }
@@ -1258,7 +1258,7 @@ inline void PanConstantRule(float pan, float* volL, float* volR)
    *volR = wt_sine[int(pp/wt_angletoindex)];//sin(pp); // TODO: precalculate
 }
 
-inline void PanLinearRule(float pan, float* volL, float* volR)
+void PanLinearRule(float pan, float* volL, float* volR)
 {
    *volL = *volR = 1;
     if(pan > 0)
@@ -1305,7 +1305,7 @@ void GetPatternNameImage(Pattern* pt)
     }
 }
 
-inline float GetVolOutput(float val)
+float GetVolOutput(float val)
 {
     if(val < 1)
     {

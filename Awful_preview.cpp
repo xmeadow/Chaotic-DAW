@@ -253,7 +253,7 @@ void  Preview_Release(int key)
     }
 }
 
-inline void Preview_SetNoteVolume(unsigned int note, float volume)
+void Preview_SetNoteVolume(unsigned int note, float volume)
 {
     for(int ic = 0; ic < MAX_PREVIEW_ELEMENTS; ic++)
     {
@@ -268,7 +268,7 @@ inline void Preview_SetNoteVolume(unsigned int note, float volume)
     }
 }
 
-inline void Preview_SetVolume(float volume)
+void Preview_SetVolume(float volume)
 {
     for(int ic = 0; ic < MAX_PREVIEW_ELEMENTS; ic++)
     {

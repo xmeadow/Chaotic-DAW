@@ -31,11 +31,11 @@ extern void         StopMain(bool forceresetmix);
 void                MixPreviewData(float* dataL, float* dataR);
 bool                IsCommandApplicable(Command* cmd, NoteInstance* instr_instance);
 extern inline float MixPans(float src_pan, float dst_pan);
-inline void		    GetMonoSampleData(Sample* sample, double cursor_pos, float* dataLR);
-inline void			GeStereoSampleData(Sample* sample, double cursor_pos, float* dataL, float* dataR);
-inline double       Sinc(double a);
-inline double       SincWindowedBlackman(double a, double b, unsigned int num);
-inline float        Sinc_Interpolate(float* Yi, double dX, unsigned int num);
+void		        GetMonoSampleData(Sample* sample, double cursor_pos, float* dataLR);
+void		        GeStereoSampleData(Sample* sample, double cursor_pos, float* dataL, float* dataR);
+double              Sinc(double a);
+double              SincWindowedBlackman(double a, double b, unsigned int num);
+float               Sinc_Interpolate(float* Yi, double dX, unsigned int num);
 extern void         ResetUnstableElements();
 extern void         ResetPlacedEnvelopes();
 
@@ -598,7 +598,7 @@ INLINE float Gaussian_Interpol(float* Yi, float dX)
     return ret_val;
 }
 
-INLINE float Sinc_Interpolate(float* Yi, double dX, unsigned int num)
+float Sinc_Interpolate(float* Yi, double dX, unsigned int num)
 {
     double ret_val = 0;
     unsigned char mid = num/2;
@@ -614,17 +614,17 @@ INLINE float Sinc_Interpolate(float* Yi, double dX, unsigned int num)
     return (float)ret_val;
 }
 
-INLINE double Sinc(double a)
+double Sinc(double a)
 {
     return sin(PI*a)/(PI*a);
 }
 
-INLINE double SincWindowedBlackman(double a, double b, unsigned int num)
+double SincWindowedBlackman(double a, double b, unsigned int num)
 {
     return Sinc(a)*(0.42 - 0.5*cos((2.f*PI*b)/((float)num)) + 0.08*cos((4.f*PI*b)/((float)num)));
 }
 
-INLINE void GetMonoSampleData(Sample* sample, double cursor_pos, float* dataLR)
+void GetMonoSampleData(Sample* sample, double cursor_pos, float* dataLR)
 {
     float x1 = (float)(int)cursor_pos;
     float x2 = x1 + 1;
@@ -741,7 +741,7 @@ INLINE void GetMonoSampleData(Sample* sample, double cursor_pos, float* dataLR)
     }
 }
 
-INLINE void GeStereoSampleData(Sample* sample, double cursor_pos, float* dataL, float* dataR)
+void GeStereoSampleData(Sample* sample, double cursor_pos, float* dataL, float* dataR)
 {
     double x1, x2, x3;
 	float y1, y2;

@@ -13,8 +13,6 @@ class SliderBase;
 class Pattern;
 class Instrument;
 
-enum SliderType;
-
 extern Image*  img_closew1;
 extern Image*  img_closew2;
 

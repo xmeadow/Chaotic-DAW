@@ -575,7 +575,7 @@ void Element::ForceResetTriggers()
         tg->frame_phase = 0;
         tg->tgworking = false;
         tg->listed_globally = false;
-        tg->tgsactive = false;
+        tg->tgsactive = NULL;
         if(tg->apatt_instance != NULL && tg->apatt_instance->pbk != NULL)
         {
             tg->apatt_instance->pbk->dworking = false;

@@ -1476,8 +1476,8 @@ void Sample::Save(XmlElement * instrNode)
     Instrument::Save(instrNode);
 
     instrNode->setAttribute(T("Normalized"), normalized ? 1 : 0);
-    instrNode->setAttribute(T("LoopStart"), String(lp_start));
-    instrNode->setAttribute(T("LoopEnd"), String(lp_end));
+    instrNode->setAttribute(T("LoopStart"), String((int)lp_start));
+    instrNode->setAttribute(T("LoopEnd"), String((int)lp_end));
     instrNode->setAttribute(T("LoopType"), int(looptype));
 
     XmlElement * envX = envVol->Save("SmpEnv");

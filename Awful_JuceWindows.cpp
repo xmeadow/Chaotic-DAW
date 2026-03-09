@@ -2059,7 +2059,7 @@ ASlider* CComponent::PlaceSliderWithLabel(char* txt, Parameter* param, int x, in
     return slider;
 }
 
-ALabel* CComponent::PlaceSmallLabel(char * txt, int x, int y, Colour& clr)
+ALabel* CComponent::PlaceSmallLabel(char * txt, int x, int y, const Colour& clr)
 {
     String str1(txt);
     ALabel* label;
@@ -2072,7 +2072,7 @@ ALabel* CComponent::PlaceSmallLabel(char * txt, int x, int y, Colour& clr)
     return label;
 }
 
-ALabel* CComponent::PlaceBigLabel(char * txt, int x, int y, Colour& clr)
+ALabel* CComponent::PlaceBigLabel(char * txt, int x, int y, const Colour& clr)
 {
     String str1(txt);
     ALabel* label;
@@ -2085,7 +2085,7 @@ ALabel* CComponent::PlaceBigLabel(char * txt, int x, int y, Colour& clr)
     return label;
 }
 
-ALabel* CComponent::PlaceTxtLabel(char * txt, int x, int y, Colour& clr)
+ALabel* CComponent::PlaceTxtLabel(char * txt, int x, int y, const Colour& clr)
 {
     String str1(txt);
     ALabel* label;
@@ -2098,7 +2098,7 @@ ALabel* CComponent::PlaceTxtLabel(char * txt, int x, int y, Colour& clr)
     return label;
 }
 
-ALabel* CComponent::PlaceTxtLabel1(char * txt, int x, int y, Colour& clr)
+ALabel* CComponent::PlaceTxtLabel1(char * txt, int x, int y, const Colour& clr)
 {
     String str1(txt);
     ALabel* label;

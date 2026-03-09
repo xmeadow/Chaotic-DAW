@@ -12,15 +12,15 @@
 /* AudioEffectX stub - needed if any code references the class type.
  * This project uses CVSTHost for VST2 hosting and doesn't implement VST2
  * plugins, so we provide a minimal stub here. */
+typedef VstIntPtr (VSTCALLBACK *audioMasterCallback)(AEffect* effect, VstInt32 opcode,
+    VstInt32 index, VstIntPtr value, void* ptr, float opt);
+
 class AudioEffect
 {
 public:
     AudioEffect(audioMasterCallback audioMaster, VstInt32 numPrograms, VstInt32 numParams) {}
     virtual ~AudioEffect() {}
 };
-
-typedef VstIntPtr (VSTCALLBACK *audioMasterCallback)(AEffect* effect, VstInt32 opcode,
-    VstInt32 index, VstIntPtr value, void* ptr, float opt);
 
 class AudioEffectX : public AudioEffect
 {

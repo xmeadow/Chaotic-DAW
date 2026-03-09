@@ -2995,7 +2995,7 @@ void VSTEffect::AddParameters()
 			strncpy(pParam->name, pParamName, MAX_PARAM_NAME);
 			pParam->vstring = new ValueString(VStr_Default);
 
-			strncpy(pParam->vstring->label, pValDisp, min(100-strlen(pParamLabel),strlen(pValDisp)));
+			                        strncpy(pParam->vstring->label, pValDisp, std::min<size_t>(100-strlen(pParamLabel),strlen(pValDisp)));
 			strcat(pParam->vstring->label, pParamLabel);
 
 			pParam->vstring->SetValue(fVal);
@@ -3051,7 +3051,7 @@ void VSTEffect::UpdateVString(Parameter* param)
     this->pPlug->GetParamLabel(param->index, &pParamLabel);
     //strcpy(pParamLabel, (const char*)String(pParamLabel).trim());
     memset(param->vstring->label, 0, sizeof(param->vstring->label));
-    strncpy(param->vstring->label, pValDisp, min(100-strlen(pParamLabel),strlen(pValDisp)));
+    strncpy(param->vstring->label, pValDisp, std::min<size_t>(100-strlen(pParamLabel),strlen(pValDisp)));
     strcat(param->vstring->label, pParamLabel);
 
     param->vstring->SetValue(param->val);
@@ -3627,7 +3627,7 @@ void VSTEffect::restoreFromTempParameterStore (const MemoryBlock& m)
         this->pPlug->SetParam(i, p[i]);
 }
 
-void VSTEffect::setParamsInProgramBlock (fxProgram* const prog) throw()
+void VSTEffect::setParamsInProgramBlock (fxProgram* const prog)
 {
     const int numParams = this->pPlug->GetNumParams();
 

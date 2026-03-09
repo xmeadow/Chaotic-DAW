@@ -153,30 +153,6 @@ ASIOSDK2/common/asio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asio.cpp.s
 .PHONY : ASIOSDK2/common/asio.cpp.s
 
-ASIOSDK2/common/asiodrvr.obj: ASIOSDK2/common/asiodrvr.cpp.obj
-.PHONY : ASIOSDK2/common/asiodrvr.obj
-
-# target to build an object file
-ASIOSDK2/common/asiodrvr.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.obj
-.PHONY : ASIOSDK2/common/asiodrvr.cpp.obj
-
-ASIOSDK2/common/asiodrvr.i: ASIOSDK2/common/asiodrvr.cpp.i
-.PHONY : ASIOSDK2/common/asiodrvr.i
-
-# target to preprocess a source file
-ASIOSDK2/common/asiodrvr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.i
-.PHONY : ASIOSDK2/common/asiodrvr.cpp.i
-
-ASIOSDK2/common/asiodrvr.s: ASIOSDK2/common/asiodrvr.cpp.s
-.PHONY : ASIOSDK2/common/asiodrvr.s
-
-# target to generate assembly for a file
-ASIOSDK2/common/asiodrvr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/ASIOSDK2/common/asiodrvr.cpp.s
-.PHONY : ASIOSDK2/common/asiodrvr.cpp.s
-
 ASIOSDK2/common/combase.obj: ASIOSDK2/common/combase.cpp.obj
 .PHONY : ASIOSDK2/common/combase.obj
 
@@ -1265,30 +1241,6 @@ External/common/pa_cpuload.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_cpuload.c.s
 .PHONY : External/common/pa_cpuload.c.s
 
-External/common/pa_debugprint.obj: External/common/pa_debugprint.c.obj
-.PHONY : External/common/pa_debugprint.obj
-
-# target to build an object file
-External/common/pa_debugprint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.obj
-.PHONY : External/common/pa_debugprint.c.obj
-
-External/common/pa_debugprint.i: External/common/pa_debugprint.c.i
-.PHONY : External/common/pa_debugprint.i
-
-# target to preprocess a source file
-External/common/pa_debugprint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.i
-.PHONY : External/common/pa_debugprint.c.i
-
-External/common/pa_debugprint.s: External/common/pa_debugprint.c.s
-.PHONY : External/common/pa_debugprint.s
-
-# target to generate assembly for a file
-External/common/pa_debugprint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_debugprint.c.s
-.PHONY : External/common/pa_debugprint.c.s
-
 External/common/pa_dither.obj: External/common/pa_dither.c.obj
 .PHONY : External/common/pa_dither.obj
 
@@ -1361,6 +1313,30 @@ External/common/pa_process.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_process.c.s
 .PHONY : External/common/pa_process.c.s
 
+External/common/pa_skeleton.obj: External/common/pa_skeleton.c.obj
+.PHONY : External/common/pa_skeleton.obj
+
+# target to build an object file
+External/common/pa_skeleton.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.obj
+.PHONY : External/common/pa_skeleton.c.obj
+
+External/common/pa_skeleton.i: External/common/pa_skeleton.c.i
+.PHONY : External/common/pa_skeleton.i
+
+# target to preprocess a source file
+External/common/pa_skeleton.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.i
+.PHONY : External/common/pa_skeleton.c.i
+
+External/common/pa_skeleton.s: External/common/pa_skeleton.c.s
+.PHONY : External/common/pa_skeleton.s
+
+# target to generate assembly for a file
+External/common/pa_skeleton.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_skeleton.c.s
+.PHONY : External/common/pa_skeleton.c.s
+
 External/common/pa_stream.obj: External/common/pa_stream.c.obj
 .PHONY : External/common/pa_stream.obj
 
@@ -1408,54 +1384,6 @@ External/common/pa_trace.s: External/common/pa_trace.c.s
 External/common/pa_trace.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/common/pa_trace.c.s
 .PHONY : External/common/pa_trace.c.s
-
-External/dsound/pa_win_ds.obj: External/dsound/pa_win_ds.c.obj
-.PHONY : External/dsound/pa_win_ds.obj
-
-# target to build an object file
-External/dsound/pa_win_ds.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.obj
-.PHONY : External/dsound/pa_win_ds.c.obj
-
-External/dsound/pa_win_ds.i: External/dsound/pa_win_ds.c.i
-.PHONY : External/dsound/pa_win_ds.i
-
-# target to preprocess a source file
-External/dsound/pa_win_ds.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.i
-.PHONY : External/dsound/pa_win_ds.c.i
-
-External/dsound/pa_win_ds.s: External/dsound/pa_win_ds.c.s
-.PHONY : External/dsound/pa_win_ds.s
-
-# target to generate assembly for a file
-External/dsound/pa_win_ds.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds.c.s
-.PHONY : External/dsound/pa_win_ds.c.s
-
-External/dsound/pa_win_ds_dynlink.obj: External/dsound/pa_win_ds_dynlink.c.obj
-.PHONY : External/dsound/pa_win_ds_dynlink.obj
-
-# target to build an object file
-External/dsound/pa_win_ds_dynlink.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.obj
-.PHONY : External/dsound/pa_win_ds_dynlink.c.obj
-
-External/dsound/pa_win_ds_dynlink.i: External/dsound/pa_win_ds_dynlink.c.i
-.PHONY : External/dsound/pa_win_ds_dynlink.i
-
-# target to preprocess a source file
-External/dsound/pa_win_ds_dynlink.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.i
-.PHONY : External/dsound/pa_win_ds_dynlink.c.i
-
-External/dsound/pa_win_ds_dynlink.s: External/dsound/pa_win_ds_dynlink.c.s
-.PHONY : External/dsound/pa_win_ds_dynlink.s
-
-# target to generate assembly for a file
-External/dsound/pa_win_ds_dynlink.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/dsound/pa_win_ds_dynlink.c.s
-.PHONY : External/dsound/pa_win_ds_dynlink.c.s
 
 External/wasapi/pa_win_wasapi.obj: External/wasapi/pa_win_wasapi.cpp.obj
 .PHONY : External/wasapi/pa_win_wasapi.obj
@@ -1528,30 +1456,6 @@ External/win/pa_win_util.s: External/win/pa_win_util.c.s
 External/win/pa_win_util.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/win/pa_win_util.c.s
 .PHONY : External/win/pa_win_util.c.s
-
-External/win/pa_x86_plain_converters.obj: External/win/pa_x86_plain_converters.c.obj
-.PHONY : External/win/pa_x86_plain_converters.obj
-
-# target to build an object file
-External/win/pa_x86_plain_converters.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.obj
-.PHONY : External/win/pa_x86_plain_converters.c.obj
-
-External/win/pa_x86_plain_converters.i: External/win/pa_x86_plain_converters.c.i
-.PHONY : External/win/pa_x86_plain_converters.i
-
-# target to preprocess a source file
-External/win/pa_x86_plain_converters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.i
-.PHONY : External/win/pa_x86_plain_converters.c.i
-
-External/win/pa_x86_plain_converters.s: External/win/pa_x86_plain_converters.c.s
-.PHONY : External/win/pa_x86_plain_converters.s
-
-# target to generate assembly for a file
-External/win/pa_x86_plain_converters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/External/win/pa_x86_plain_converters.c.s
-.PHONY : External/win/pa_x86_plain_converters.c.s
 
 External/wmme/pa_win_wmme.obj: External/wmme/pa_win_wmme.c.obj
 .PHONY : External/wmme/pa_win_wmme.obj
@@ -2080,30 +1984,6 @@ rosic/delaylines/rosic_PingPongEcho.s: rosic/delaylines/rosic_PingPongEcho.cpp.s
 rosic/delaylines/rosic_PingPongEcho.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho.cpp.s
 .PHONY : rosic/delaylines/rosic_PingPongEcho.cpp.s
-
-rosic/delaylines/rosic_PingPongEcho1.obj: rosic/delaylines/rosic_PingPongEcho1.cpp.obj
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.obj
-
-# target to build an object file
-rosic/delaylines/rosic_PingPongEcho1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.obj
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.cpp.obj
-
-rosic/delaylines/rosic_PingPongEcho1.i: rosic/delaylines/rosic_PingPongEcho1.cpp.i
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.i
-
-# target to preprocess a source file
-rosic/delaylines/rosic_PingPongEcho1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.i
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.cpp.i
-
-rosic/delaylines/rosic_PingPongEcho1.s: rosic/delaylines/rosic_PingPongEcho1.cpp.s
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.s
-
-# target to generate assembly for a file
-rosic/delaylines/rosic_PingPongEcho1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chaotic-DAW.dir/build.make CMakeFiles/Chaotic-DAW.dir/rosic/delaylines/rosic_PingPongEcho1.cpp.s
-.PHONY : rosic/delaylines/rosic_PingPongEcho1.cpp.s
 
 rosic/dynamics/rosic_BesselFilterForGainSignal.obj: rosic/dynamics/rosic_BesselFilterForGainSignal.cpp.obj
 .PHONY : rosic/dynamics/rosic_BesselFilterForGainSignal.obj
@@ -4061,9 +3941,6 @@ help:
 	@echo "... ASIOSDK2/common/asio.obj"
 	@echo "... ASIOSDK2/common/asio.i"
 	@echo "... ASIOSDK2/common/asio.s"
-	@echo "... ASIOSDK2/common/asiodrvr.obj"
-	@echo "... ASIOSDK2/common/asiodrvr.i"
-	@echo "... ASIOSDK2/common/asiodrvr.s"
 	@echo "... ASIOSDK2/common/combase.obj"
 	@echo "... ASIOSDK2/common/combase.i"
 	@echo "... ASIOSDK2/common/combase.s"
@@ -4200,9 +4077,6 @@ help:
 	@echo "... External/common/pa_cpuload.obj"
 	@echo "... External/common/pa_cpuload.i"
 	@echo "... External/common/pa_cpuload.s"
-	@echo "... External/common/pa_debugprint.obj"
-	@echo "... External/common/pa_debugprint.i"
-	@echo "... External/common/pa_debugprint.s"
 	@echo "... External/common/pa_dither.obj"
 	@echo "... External/common/pa_dither.i"
 	@echo "... External/common/pa_dither.s"
@@ -4212,18 +4086,15 @@ help:
 	@echo "... External/common/pa_process.obj"
 	@echo "... External/common/pa_process.i"
 	@echo "... External/common/pa_process.s"
+	@echo "... External/common/pa_skeleton.obj"
+	@echo "... External/common/pa_skeleton.i"
+	@echo "... External/common/pa_skeleton.s"
 	@echo "... External/common/pa_stream.obj"
 	@echo "... External/common/pa_stream.i"
 	@echo "... External/common/pa_stream.s"
 	@echo "... External/common/pa_trace.obj"
 	@echo "... External/common/pa_trace.i"
 	@echo "... External/common/pa_trace.s"
-	@echo "... External/dsound/pa_win_ds.obj"
-	@echo "... External/dsound/pa_win_ds.i"
-	@echo "... External/dsound/pa_win_ds.s"
-	@echo "... External/dsound/pa_win_ds_dynlink.obj"
-	@echo "... External/dsound/pa_win_ds_dynlink.i"
-	@echo "... External/dsound/pa_win_ds_dynlink.s"
 	@echo "... External/wasapi/pa_win_wasapi.obj"
 	@echo "... External/wasapi/pa_win_wasapi.i"
 	@echo "... External/wasapi/pa_win_wasapi.s"
@@ -4233,9 +4104,6 @@ help:
 	@echo "... External/win/pa_win_util.obj"
 	@echo "... External/win/pa_win_util.i"
 	@echo "... External/win/pa_win_util.s"
-	@echo "... External/win/pa_x86_plain_converters.obj"
-	@echo "... External/win/pa_x86_plain_converters.i"
-	@echo "... External/win/pa_x86_plain_converters.s"
 	@echo "... External/wmme/pa_win_wmme.obj"
 	@echo "... External/wmme/pa_win_wmme.i"
 	@echo "... External/wmme/pa_win_wmme.s"
@@ -4302,9 +4170,6 @@ help:
 	@echo "... rosic/delaylines/rosic_PingPongEcho.obj"
 	@echo "... rosic/delaylines/rosic_PingPongEcho.i"
 	@echo "... rosic/delaylines/rosic_PingPongEcho.s"
-	@echo "... rosic/delaylines/rosic_PingPongEcho1.obj"
-	@echo "... rosic/delaylines/rosic_PingPongEcho1.i"
-	@echo "... rosic/delaylines/rosic_PingPongEcho1.s"
 	@echo "... rosic/dynamics/rosic_BesselFilterForGainSignal.obj"
 	@echo "... rosic/dynamics/rosic_BesselFilterForGainSignal.i"
 	@echo "... rosic/dynamics/rosic_BesselFilterForGainSignal.s"

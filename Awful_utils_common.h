@@ -34,7 +34,7 @@ extern long     Tick2Frame(float tick);
 extern float    Frame2Tick(tframe frame);
 extern float    Tick2Second(float tick);
 extern float    Frame2Tick(double frame);
-extern inline float Interpolate_Line(double x1, float y1, double x2, float y2, double x3);
+extern float    Interpolate_Line(double x1, float y1, double x2, float y2, double x3);
 extern int      Calc_PixLength(long num_frames, long sample_rate, float tickwidth);
 extern float    Calc_PercentPan(float pan_percent);
 extern float    Div100(float percent);

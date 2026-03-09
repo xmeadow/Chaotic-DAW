@@ -6,6 +6,7 @@
 #include "awful_parammodule.h"
 #include <direct.h>
 #include <errno.h>
+#include <algorithm>
 
 //=================================================================================================
 //                                  ParamModule Class Implementation
@@ -159,7 +160,7 @@ void ParamModule::ScanForPresets()
                     if (xmlHeader != NULL)
                     {
                         String Str1 = xmlHeader->getStringAttribute(T("Preset"));
-                        Str1.copyToBuffer(pPreset->name, min(Str1.length(), 255));
+                        Str1.copyToBuffer(pPreset->name, std::min(Str1.length(), 255));
                         pPreset->native = true;
                         strcpy(pPreset->path, filename);
                         this->AddPreset(pPreset);
@@ -379,7 +380,7 @@ void ParamModule::SaveStateData(XmlElement & xmlParentNode, char* pPresetName, b
     XmlElement  *xmlStateNode = new XmlElement(T("Module"));
 
     xmlStateNode->setAttribute(T("Name"), this->name);
-    xmlStateNode->setAttribute(T("ID"), uniqueID);
+    xmlStateNode->setAttribute(T("ID"), (int)uniqueID);
     //xmlEffectHeader->setAttribute(T("Type"), this->type);
 
     if (pPresetName != NULL)
@@ -454,7 +455,7 @@ void ParamModule::RestoreStateData(XmlElement & xmlStateNode, bool global)
             //pParam = this->GetParamByIndex(idx);
 
 			String name = xmlChildNode->getStringAttribute(T("name"));
-            name.copyToBuffer(szName, min(name.length(), MAX_NAME_STRING));
+            name.copyToBuffer(szName, std::min(name.length(), MAX_NAME_STRING));
             pParam = this->GetParamByName(szName);
 
 			if(pParam != NULL)
@@ -471,7 +472,7 @@ void ParamModule::RestoreStateData(XmlElement & xmlStateNode, bool global)
             //Extract module name from XML and convert it to C-style string
             String StrName = xmlChildNode->getStringAttribute(T("name"));
             memset(szName, 0, MAX_NAME_STRING * sizeof(char));
-            StrName.copyToBuffer(szName, min(StrName.length(), MAX_NAME_STRING));
+            StrName.copyToBuffer(szName, std::min(StrName.length(), MAX_NAME_STRING));
 
             //Go through the children list and find a kid with equal name
             pChildEffect = this->FindChild(szName);
@@ -945,7 +946,7 @@ void ParamModule::SetName(char* name)
     if (NULL != name)
     {
         memset(this->name, 0, MAX_NAME_STRING * sizeof(char));
-        strncpy(this->name, name, min(MAX_NAME_STRING - 1, strlen(name)));
+        strncpy(this->name, name, std::min(MAX_NAME_STRING - 1, (int)strlen(name)));
     }
 }
 
@@ -954,7 +955,7 @@ void ParamModule::SetPath(char* path)
     if (NULL != name)
     {
         memset(this->path, 0, MAX_PATH_STRING * sizeof(char));
-        strncpy(this->path, path, min(MAX_PATH_STRING - 1, strlen(path)));
+        strncpy(this->path, path, std::min(MAX_PATH_STRING - 1, (int)strlen(path)));
     }
 }
 
@@ -963,7 +964,7 @@ void ParamModule::SetPresetPath(char* presetpath)
     if (NULL != name)
     {
         memset(this->preset_path, 0, MAX_PATH_STRING * sizeof(char));
-        strncpy(this->preset_path, presetpath, min(MAX_PATH_STRING - 1, strlen(presetpath)));
+        strncpy(this->preset_path, presetpath, std::min(MAX_PATH_STRING - 1, (int)strlen(presetpath)));
     }
 }
 

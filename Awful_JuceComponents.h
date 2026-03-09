@@ -1629,7 +1629,7 @@ public:
 
     void setText(const String& newText,  const bool broadcastChangeMessage);
 
-    void setTextColour (Colour& newcolour);
+    void setTextColour (const Colour& newcolour);
 
     /** True if the slider moves horizontally. */
     bool isHorizontal() const throw();

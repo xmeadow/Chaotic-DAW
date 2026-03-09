@@ -391,7 +391,7 @@ public:
 
 #endif
 
-    virtual bool Load(const char *name) throw(...);
+    virtual bool Load(const char *name);
     virtual bool Unload();
 
     void SetIndex(int nNewIndex) { nIndex = nNewIndex; }

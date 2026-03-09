@@ -635,7 +635,7 @@ namespace rosic
   INLINE void sinCos(double x, double* sinResult, double* cosResult)
   {
     double s, c;     // do we need these intermediate variables?
-    #ifdef LINUX     // assembly-version causes compiler errors on linux (gcc-thing?)
+    #if defined(LINUX) || defined(__GNUC__)     // assembly-version causes compiler errors on linux (gcc-thing?)
       *sinResult = sin(x);
       *cosResult = cos(x);
     #else

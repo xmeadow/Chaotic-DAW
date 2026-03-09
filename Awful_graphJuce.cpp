@@ -13652,7 +13652,7 @@ void J_Menus(Graphics& g)
     }
 }
 
-INLINE void J_Separates(Graphics& g)
+void J_Separates(Graphics& g)
 {
     bool hlrenew = false;
 
