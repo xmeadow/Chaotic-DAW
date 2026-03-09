@@ -1,0 +1,1 @@
+ -lwinmm -lole32 -loleaut32 -luuid -lcomctl32 -lcomdlg32 -luser32 -lgdi32 -lkernel32 -ladvapi32 -lshlwapi -lws2_32 -ldsound -ldxguid "/home/xmeadow/Desktop/dev/Chaotic-DAW/libsndfile-1.lib" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

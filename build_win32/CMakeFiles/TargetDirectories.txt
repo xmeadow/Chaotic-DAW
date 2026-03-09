@@ -1,0 +1,3 @@
+/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles/Chaotic-DAW.dir
+/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles/edit_cache.dir
+/home/xmeadow/Desktop/dev/Chaotic-DAW/build_win32/CMakeFiles/rebuild_cache.dir

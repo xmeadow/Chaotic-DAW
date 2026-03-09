@@ -90,10 +90,14 @@ typedef signed long long INT64;
 #endif
 
 // unsigned 32 bit integers:
+#ifndef UINT32
 #ifdef _MSC_VER
 typedef unsigned __int32 UINT32;
+#elif defined(__MINGW32__) || defined(__MINGW64__)
+typedef unsigned int UINT32;
 #else
 typedef unsigned long UINT32;
+#endif
 #endif
 
 // 32 bit integers:

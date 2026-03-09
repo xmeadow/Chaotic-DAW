@@ -1,0 +1,6 @@
+[submodule "vstsdk3"]
+	path = vstsdk3
+	url = https://github.com/steinbergmedia/vst3sdk
+[submodule "ASIOSDK2"]
+	path = ASIOSDK2
+	url = https://github.com/audiosdk/asio
