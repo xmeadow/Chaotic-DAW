@@ -130,8 +130,13 @@ Sample* AddSample(const char* path, const char* named, const char* alias, bool t
     unsigned int    memsize;
 
     char* name = (char*)path;
+#ifdef USE_WIN32
     while(strchr(name, '\\') != NULL)
         name = strchr(name, '\\') + 1;
+#else
+    while(strchr(name, '/') != NULL)
+        name = strchr(name, '/') + 1;
+#endif
 
     memset(&sf_info, 0, sizeof(SF_INFO));
     soundfile = sf_open(path, SFM_READ, &sf_info);

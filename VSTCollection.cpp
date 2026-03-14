@@ -541,8 +541,12 @@ void CVSTPlugin::GetDisplayName(char *name, unsigned int length)
         /* Go backward till find a dot in file name */
         while (this->pEffect->sName[i--] != '.');
 
-        /* Go backward until reach the first "\\" */
+        /* Go backward until reach the first path separator */
+#ifdef USE_WIN32
         while (this->pEffect->sName[i--] != '\\')
+#else
+        while (i > 0 && this->pEffect->sName[i--] != '/')
+#endif
         {
             ++len; // Here we calc length of file name (without extension)
         }
@@ -712,7 +716,11 @@ void CVSTEffWnd::SetTitle()
 		{
 			unsigned long i = strlen(this->pEffect->sName);
 			unsigned int j = 0;
-			while (this->pEffect->sName[i--] != '\\' );
+	#ifdef USE_WIN32
+		while (this->pEffect->sName[i--] != '\\' );
+#else
+		while (i > 0 && this->pEffect->sName[i--] != '/' );
+#endif
 			i += 2;
 			while (i < strlen(this->pEffect->sName))
 			{

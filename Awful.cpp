@@ -12291,7 +12291,14 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
                 continue;
             }
 
+#ifdef USE_WIN32
             thread->setStatusMessage("Scanning: " + String(strrchr(filename, '\\') + 1));
+#else
+            {
+                const char* slash = strrchr(filename, '/');
+                thread->setStatusMessage("Scanning: " + String(slash ? slash + 1 : filename));
+            }
+#endif
             if (pVSTCollector->CheckPlugin(filename, &isGen, name) == true)
             {
                 pEntry = new ModListEntry;
@@ -12305,9 +12312,12 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
                 }
                 else
                 {
-                    char * pName = NULL;
-                    pName = strrchr(filename, '\\');
-                    strcpy(pEntry->name, pName + 1);
+#ifdef USE_WIN32
+                    char * pName = strrchr(filename, '\\');
+#else
+                    char * pName = strrchr(filename, '/');
+#endif
+                    strcpy(pEntry->name, pName ? pName + 1 : filename);
                 }
 
                 if(true == isGen)
@@ -12327,7 +12337,11 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
 
                 pEntry->subtype = ModSubtype_VSTPlugin;
                 strcpy(pEntry->path, filename);
+#ifdef USE_WIN32
                 pName = strrchr(filename, '\\');
+#else
+                pName = strrchr(filename, '/');
+#endif
 
                 if (pName != NULL)
                 {
@@ -12366,7 +12380,11 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
                 if(strcmp(founddata.cFileName, ".") != 0 && 
                    strcmp(founddata.cFileName, "..") != 0)
                 {
+#ifdef USE_WIN32
                     sprintf(temp_path, "%s%s%s", path, founddata.cFileName, "\\");
+#else
+                    sprintf(temp_path, "%s%s%s", path, founddata.cFileName, "/");
+#endif
                     ScanDirForVST(temp_path, xmlList, thread);
                 }
             }
@@ -12429,7 +12447,11 @@ void Init_ScanForVST(ScanThread* thread)
             if (env_path != NULL)
             {
                 memset(temp_path, 0, sizeof(temp_path));
+#ifdef USE_WIN32
                 sprintf(temp_path,"%s%s", env_path, "\\");
+#else
+                sprintf(temp_path,"%s%s", env_path, "/");
+#endif
 
                 if ( (_stricmp(temp_path, VST_EXT_PATH_1) != 0) &&
                      (_stricmp(temp_path, VST_EXT_PATH_2) != 0) )
@@ -12452,7 +12474,11 @@ void Init_ScanForVST(ScanThread* thread)
             if ( (rPathSize != 0) && (RegPath[0] != 0) )
             {
                 memset(temp_path, 0, sizeof(temp_path));
+#ifdef USE_WIN32
                 sprintf(temp_path,"%s%s", RegPath, "\\");
+#else
+                sprintf(temp_path,"%s%s", RegPath, "/");
+#endif
 
                 if ( (_stricmp(temp_path, VST_EXT_PATH_1) != 0) &&
                      (_stricmp(temp_path, VST_EXT_PATH_2) != 0) )

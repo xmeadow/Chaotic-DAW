@@ -242,7 +242,7 @@ BlankEffect::BlankEffect(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Default;
     strcpy(this->name, "Blank effect");
-    strcpy(this->preset_path, "./Presets/Blank Effect\\");
+    strcpy(this->preset_path, "./Presets/Blank Effect/");
     strcpy(this->path,"internal://blank");
     uniqueID = MAKE_FOURCC('B','L','N','K');
 
@@ -379,7 +379,7 @@ Gain::Gain(Mixcell* mc, AliasRecord* ar) : Eff(mc)
     subtype = ModSubtype_Gain;
 
     strcpy(this->name, "Gain");
-    strcpy(this->preset_path, "./Data/Presets/Effects\\Native\\Gain\\");
+    strcpy(this->preset_path, "./Data/Presets/Effects/Native/Gain/");
     strcpy(this->path,"internal://gain");
     uniqueID = MAKE_FOURCC('G','A','I','N');
 
@@ -440,7 +440,7 @@ Filter::Filter(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Filter;
     strcpy(this->name, "Simple Filter");
-    strcpy(this->preset_path, "./Presets/Simple Filter\\");
+    strcpy(this->preset_path, "./Presets/Simple Filter/");
     strcpy(this->path,"internal://lp");
     uniqueID = MAKE_FOURCC('F','L','T','R');
 
@@ -553,7 +553,7 @@ CFilter3::CFilter3(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_CFilter3;
     strcpy(this->name, "Filter");
-    strcpy(this->preset_path, "./Presets/Filter\\");
+    strcpy(this->preset_path, "./Presets/Filter/");
     strcpy(this->path,"internal://filter3");
     uniqueID = MAKE_FOURCC('C','F','L','T');
 
@@ -741,7 +741,7 @@ CFilter2::CFilter2(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_CFilter2;
     strcpy(this->name, "Filter");
-    strcpy(this->preset_path, "./Presets/Filter\\");
+    strcpy(this->preset_path, "./Presets/Filter/");
     strcpy(this->path,"internal://filter2");
     uniqueID = MAKE_FOURCC('C','F','L','T');
 
@@ -895,7 +895,7 @@ CFilter::CFilter(Mixcell* mc, AliasRecord* ar) : Eff(mc)
     subtype = ModSubtype_CFilter;
 
     strcpy(this->name, "Filter");
-    strcpy(this->preset_path, "./Presets/Filter\\");
+    strcpy(this->preset_path, "./Presets/Filter/");
     strcpy(this->path,"internal://filter");
     uniqueID = MAKE_FOURCC('C','F','L','T');
     arec = ar;
@@ -1128,7 +1128,7 @@ CChorus::CChorus(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Chorus;
     strcpy(this->name, "Chorus");
-    strcpy(this->preset_path, "./Presets/Chorus\\");
+    strcpy(this->preset_path, "./Presets/Chorus/");
     strcpy(this->path,"internal://chorus");
     uniqueID = MAKE_FOURCC('C','H','O','R');
 
@@ -1229,7 +1229,7 @@ CFlanger::CFlanger(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Flanger;
     strcpy(this->name, "Flanger");
-    strcpy(this->preset_path, "./Presets/Flanger\\");
+    strcpy(this->preset_path, "./Presets/Flanger/");
     strcpy(this->path,"internal://flanger");
     uniqueID = MAKE_FOURCC('F','L','N','G');
 
@@ -1360,7 +1360,7 @@ CPhaser::CPhaser(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Phaser;
     strcpy(this->name, "Phaser");
-    strcpy(this->preset_path, "./Presets/Phaser\\");
+    strcpy(this->preset_path, "./Presets/Phaser/");
     strcpy(this->path,"internal://phaser");
     uniqueID = MAKE_FOURCC('P','H','A','S');
 
@@ -1506,7 +1506,7 @@ EQ1::EQ1(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Equalizer1;
     strcpy(this->name, "EQ1");
-    strcpy(this->preset_path, "./Presets/EQ1\\");
+    strcpy(this->preset_path, "./Presets/EQ1/");
     strcpy(this->path,"internal://eq1");
     uniqueID = MAKE_FOURCC('E','Q','0','1');
 
@@ -1594,7 +1594,7 @@ GraphicEQ::GraphicEQ(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_GraphicEQ;
     strcpy(this->name, "GraphicEQ");
-    strcpy(this->preset_path, "./Presets/GraphicEQ\\");
+    strcpy(this->preset_path, "./Presets/GraphicEQ/");
     strcpy(this->path,"internal://eqg");
     uniqueID = MAKE_FOURCC('G','R','E','Q');
 
@@ -1747,7 +1747,7 @@ EQ3::EQ3(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Equalizer3;
     strcpy(this->name, "EQ3");
-    strcpy(this->preset_path, "./Presets/EQ3\\");
+    strcpy(this->preset_path, "./Presets/EQ3/");
     strcpy(this->path,"internal://eq3");
     uniqueID = MAKE_FOURCC('E','Q','0','3');
 
@@ -1893,7 +1893,7 @@ CTremolo::CTremolo(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Tremolo;
     strcpy(this->name, "Tremolo");
-    strcpy(this->preset_path, "./Presets/Tremolo\\");
+    strcpy(this->preset_path, "./Presets/Tremolo/");
     strcpy(this->path,"internal://tremolo");
     uniqueID = MAKE_FOURCC('T','R','E','M');
 
@@ -1968,7 +1968,7 @@ XDelay::XDelay(Mixcell* mc, AliasRecord* ar) : Eff(mc), dspCorePingPongDelay()
 {
     subtype = ModSubtype_XDelay;
     strcpy(this->name, "Delay");
-    strcpy(this->preset_path, "./Presets/Delay\\");
+    strcpy(this->preset_path, "./Presets/Delay/");
     strcpy(this->path,"internal://ppd");
     uniqueID = MAKE_FOURCC('P','P','D','L');
     arec = ar;
@@ -2121,7 +2121,7 @@ CReverb::CReverb(Mixcell* mc, AliasRecord* ar) : Eff(mc), dspCoreReverb()
 {
     subtype = ModSubtype_Reverb;
     strcpy(this->name, "Reverb");
-    strcpy(this->preset_path, "./Presets/Reverb\\");
+    strcpy(this->preset_path, "./Presets/Reverb/");
     strcpy(this->path,"internal://reverb");
     uniqueID = MAKE_FOURCC('R','E','V','R');
 
@@ -2266,7 +2266,7 @@ Compressor::Compressor(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Compressor;
     strcpy(this->name, "Compressor");
-    strcpy(this->preset_path, "./Presets/Compressor\\");
+    strcpy(this->preset_path, "./Presets/Compressor/");
     strcpy(this->path,"internal://compressor");
     uniqueID = MAKE_FOURCC('C','O','M','P');
 
@@ -2420,7 +2420,7 @@ CWahWah::CWahWah(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_WahWah;
     strcpy(this->name, "WahWah");
-    strcpy(this->preset_path, "./Presets/WahWah\\");
+    strcpy(this->preset_path, "./Presets/WahWah/");
     strcpy(this->path,"internal://wahwah");
     uniqueID = MAKE_FOURCC('W','A','H','W');
 
@@ -2511,7 +2511,7 @@ CDistort::CDistort(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Distortion;
     strcpy(this->name, "Distortion");
-    strcpy(this->preset_path, "./Presets/Distortion\\");
+    strcpy(this->preset_path, "./Presets/Distortion/");
     strcpy(this->path,"internal://distortion");
     uniqueID = MAKE_FOURCC('D','I','S','T');
 
@@ -2593,7 +2593,7 @@ CBitCrusher::CBitCrusher(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_BitCrusher;
     strcpy(this->name, "BitCrusher");
-    strcpy(this->preset_path, "./Presets/BitCrusher\\");
+    strcpy(this->preset_path, "./Presets/BitCrusher/");
     strcpy(this->path,"internal://bitcrusher");
     uniqueID = MAKE_FOURCC('B','I','T','C');
 
@@ -2660,7 +2660,7 @@ CStereo::CStereo(Mixcell* mc, AliasRecord* ar) : Eff(mc)
 {
     subtype = ModSubtype_Stereo;
     strcpy(this->name, "Stereoizer");
-    strcpy(this->preset_path, "./Presets/Stereoizer\\");
+    strcpy(this->preset_path, "./Presets/Stereoizer/");
     strcpy(this->path,"internal://stereoizer");
     uniqueID = MAKE_FOURCC('S','T','E','R');
 
