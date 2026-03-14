@@ -310,12 +310,27 @@ if(USE_MAC)
     )
 endif()
 
+# ── Copy runtime assets next to binary ────────────────────────────────────────
+# Samples, Presets, and Projects must be alongside the executable
+set(ASSET_DIRS Samples Presets Projects Plugins)
+foreach(ASSET_DIR ${ASSET_DIRS})
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${ROOT}/${ASSET_DIR}"
+            "$<TARGET_FILE_DIR:${PROJECT_NAME}>/${ASSET_DIR}"
+        COMMENT "Copying ${ASSET_DIR}/ to build output"
+    )
+endforeach()
+
 # ── Installation (Linux‑specific) ─────────────────────────────────────────────
 if(USE_LINUX)
-    # Install binary
     install(TARGETS ${PROJECT_NAME} DESTINATION bin)
 
-    # Install .desktop file and icons (optional)
+    # Install asset directories
+    foreach(ASSET_DIR ${ASSET_DIRS})
+        install(DIRECTORY "${ROOT}/${ASSET_DIR}/" DESTINATION "share/chaotic-daw/${ASSET_DIR}")
+    endforeach()
+
     # install(FILES ${ROOT}/chaotic-daw.desktop DESTINATION share/applications)
     # install(FILES ${ROOT}/icons/chaotic-daw.png DESTINATION share/icons/hicolor/256x256/apps)
 endif()

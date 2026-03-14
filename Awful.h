@@ -1192,7 +1192,11 @@ public:
 const double freq_mul_table[13] = {1, 1.059463094, 1.122462048, 1.189207115, 1.25992105, 1.334839854, 1.414213562, 1.498307077, 1.587401052, 1.68179283, 1.781797436, 1.887748625, 2};
 const char note_table[][12] = {"C-", "C#", "D-", "D#", "E-", "F-", "F#", "G-", "G#", "A-", "A#", "B-"};
 const char WavExt[4] = "wav";
+#ifdef USE_WIN32
 const char VstExt[4] = "dll";
+#else
+const char VstExt[3] = "so";
+#endif
 const char ProjExt[4] = "cmm";
 
 ///////////////////////////////////

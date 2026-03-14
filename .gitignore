@@ -112,8 +112,11 @@ Desktop.ini
 ASIOSDK2/build*/
 vstsdk3/build*/
 
-# Keep required DLL dependencies (they're part of the project)
-!*.lib
+# Windows DLLs and libs (use system libraries on Linux)
+*.dll
+*.lib
+*.def
+*.exp
 
 # ------------------------------------------------------------------------------
 # Temporary and Backup Files
@@ -126,13 +129,12 @@ vstsdk3/build*/
 # ------------------------------------------------------------------------------
 # Audio Exports (user-generated)
 # ------------------------------------------------------------------------------
-# These are user creations, not part of source code
 Exports/
 Renders/
-*.wav
+Rendered/
+
+# Keep bundled samples (Samples/*.wav) — only ignore rendered/exported audio
 *.mp3
-*.flac
-*.ogg
 
 # ------------------------------------------------------------------------------
 # Plugin Cache
@@ -159,3 +161,19 @@ TestResults/
 *.zip
 *.rar
 *.tar.gz
+
+# ------------------------------------------------------------------------------
+# Windows-only files (not needed for source)
+# ------------------------------------------------------------------------------
+*.dsp
+*.dsw
+*.rc
+*.cur
+*.ico
+*.psd
+Graphic/
+CodeBlocks/
+mingw-toolchain.cmake
+
+# Backup copies of modified files
+*.win

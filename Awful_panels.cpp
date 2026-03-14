@@ -1281,6 +1281,7 @@ void Browser::UpdateFileData()
     {
         if(strcmp(path, "--") == 0)
         {
+#ifdef USE_WIN32
             long drv = GetLogicalDrives();
             long check = 1;
             int num = 1;
@@ -1303,6 +1304,42 @@ void Browser::UpdateFileData()
                 check *= 2;
                 num++;
             }
+#else
+            // On Linux, start browsing from root "/"
+            strcpy(path, "/");
+            currpath = path;
+            strcpy(temp_path, currpath);
+            strcat(temp_path, "*.*");
+
+            HANDLE fhandle = FindFirstFile(temp_path, &founddata);
+            if(fhandle != INVALID_HANDLE_VALUE)
+            {
+                do
+                {
+                    if(strcmp(founddata.cFileName, ".") != 0 &&
+                        strcmp(founddata.cFileName, "..") != 0 &&
+                                !(founddata.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN))
+                    {
+                        if(founddata.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+                        {
+                            filedata = new FileData;
+                            strcpy(filedata->name, founddata.cFileName);
+                            strcpy(filedata->path, "/");
+                            strcat(filedata->path, filedata->name);
+                            strcat(filedata->path, "/");
+                            filedata->ftype = FType_Directory;
+                            filedata->dirtype = Dir_Usual;
+                            filedata->attrs = founddata.dwFileAttributes;
+
+                            be = new BrwEntry;
+                            be->entry = (void*)filedata;
+                            AddEntry(be);
+                        }
+                    }
+                }while(FindNextFile(fhandle, &founddata));
+                FindClose(fhandle);
+            }
+#endif
         }
         else
         {

@@ -1,3 +1,0 @@
-/usr/bin/cmake -E rm -f CMakeFiles/Chaotic-DAW.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/Chaotic-DAW.dir/objects.a @CMakeFiles/Chaotic-DAW.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++-win32 -mwindows -Wl,--whole-archive CMakeFiles/Chaotic-DAW.dir/objects.a -Wl,--no-whole-archive -o Chaotic-DAW.exe -Wl,--out-implib,libChaotic-DAW.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Chaotic-DAW.dir/linkLibs.rsp
