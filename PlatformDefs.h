@@ -318,9 +318,12 @@ struct FindFileHandle {
 };
 
 static inline int _FindFileMatch(FindFileHandle* fh, WIN32_FIND_DATA* fd) {
+    // On Windows, "*.*" matches everything (including files without dots).
+    // Emulate that behavior on Linux.
+    int match_all = (strcmp(fh->pattern, "*.*") == 0 || strcmp(fh->pattern, "*") == 0);
     struct dirent* entry;
     while ((entry = readdir(fh->dir)) != NULL) {
-        if (fnmatch(fh->pattern, entry->d_name, 0) == 0) {
+        if (match_all || fnmatch(fh->pattern, entry->d_name, 0) == 0) {
             strncpy(fd->cFileName, entry->d_name, 259);
             fd->cFileName[259] = '\0';
             fd->dwFileAttributes = 0;
@@ -364,7 +367,12 @@ static inline HANDLE FindFirstFile(const char* lpFileName, WIN32_FIND_DATA* fd) 
     }
 
     fh->dir = opendir(fh->dirpath);
-    if (!fh->dir) { delete fh; return INVALID_HANDLE_VALUE; }
+    if (!fh->dir) {
+        printf("[FindFirstFile] opendir FAILED for '%s' (pattern='%s')\n", fh->dirpath, fh->pattern);
+        fflush(stdout);
+        delete fh;
+        return INVALID_HANDLE_VALUE;
+    }
 
     if (_FindFileMatch(fh, fd)) return (HANDLE)fh;
     closedir(fh->dir);

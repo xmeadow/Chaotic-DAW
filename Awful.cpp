@@ -11807,15 +11807,32 @@ void GetStartupDir()
 
     strcpy(szWorkingDirectory, name);
 #else
-    char cwd[PATH_MAX];
-    if (getcwd(cwd, sizeof(cwd))) {
-        szWorkingDirectory = (char*)malloc(strlen(cwd) + 2);
-        strcpy(szWorkingDirectory, cwd);
-        strcat(szWorkingDirectory, "/");
+    // Use the binary's location as working directory (like GetModuleFileName on Windows)
+    char exepath[PATH_MAX];
+    ssize_t len = readlink("/proc/self/exe", exepath, sizeof(exepath) - 1);
+    if (len > 0) {
+        exepath[len] = '\0';
+        // Strip the binary name to get the directory
+        char* lastslash = strrchr(exepath, '/');
+        if (lastslash) {
+            *(lastslash + 1) = '\0';
+        }
+        szWorkingDirectory = (char*)malloc(strlen(exepath) + 1);
+        strcpy(szWorkingDirectory, exepath);
+        chdir(szWorkingDirectory);
     } else {
-        szWorkingDirectory = (char*)malloc(3);
-        strcpy(szWorkingDirectory, "./");
+        char cwd[PATH_MAX];
+        if (getcwd(cwd, sizeof(cwd))) {
+            szWorkingDirectory = (char*)malloc(strlen(cwd) + 2);
+            strcpy(szWorkingDirectory, cwd);
+            strcat(szWorkingDirectory, "/");
+        } else {
+            szWorkingDirectory = (char*)malloc(3);
+            strcpy(szWorkingDirectory, "./");
+        }
     }
+    printf("[GetStartupDir] szWorkingDirectory='%s'\n", szWorkingDirectory);
+    fflush(stdout);
 #endif
 }
 
@@ -11969,6 +11986,7 @@ void Init_WorkData()
     }
     else
     {
+#ifdef USE_WIN32
         //First, lets check how long is our working path
         int length = ::GetCurrentDirectory(0, NULL);
         szWorkingDirectory = NULL;
@@ -11981,10 +11999,10 @@ void Init_WorkData()
         {
             ::GetCurrentDirectory(length, szWorkingDirectory);
         }
-#ifdef USE_WIN32
         strcat(szWorkingDirectory, "\\");
 #else
-        strcat(szWorkingDirectory, "/");
+        // Use binary location, same as GetStartupDir
+        GetStartupDir();
 #endif
     }
 

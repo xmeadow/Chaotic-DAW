@@ -1454,7 +1454,15 @@ void Browser::UpdateFileData()
     else if(brwmode == Browse_Samples)
     {
         currpath = samplespath;
+        {
+            char dbg_cwd[PATH_MAX];
+            getcwd(dbg_cwd, sizeof(dbg_cwd));
+            printf("[Browser] Browse_Samples: samplespath='%s' cwd='%s'\n", samplespath, dbg_cwd);
+            fflush(stdout);
+        }
         ScanDirForSamples(currpath);
+        printf("[Browser] Browse_Samples: entries=%d\n", current_num_entries);
+        fflush(stdout);
     }
     else if(brwmode == Browse_Projects)
     {
@@ -1962,11 +1970,19 @@ void Browser::ActivateEntry(FileData* fd)
                 }
             }
 
+#ifdef USE_WIN32
 			last_sc--;
-			while(*last_sc != 0x5C)
+			while(*last_sc != '\\')
 			{
 				last_sc--;
 			}
+#else
+			last_sc--;
+			while(*last_sc != '/' && last_sc != path)
+			{
+				last_sc--;
+			}
+#endif
 
             if(last_sc != path)
             {
@@ -1985,7 +2001,11 @@ void Browser::ActivateEntry(FileData* fd)
 
                 last_sc--;
                 last_sc--;
-                while(*last_sc != 0x5C && last_sc != path)
+#ifdef USE_WIN32
+                while(*last_sc != '\\' && last_sc != path)
+#else
+                while(*last_sc != '/' && last_sc != path)
+#endif
                 {
                     last_sc--;
                 }
@@ -1996,29 +2016,12 @@ void Browser::ActivateEntry(FileData* fd)
         }
         else
         {
-            char* sc;
-			char* last_sc;
-            sc = last_sc = path;
-            while(sc != NULL)
-            {
-                sc = strchr(sc, '/');
-                if(sc != NULL)
-                {
-                    last_sc = sc;
-                    sc++;
-                }
-            }
-
-            if(last_sc != path)
-            {
-                strcpy(lastdir, fd->name);
-                last_sc++;
-               *last_sc = 0;
-                strcat(path, fd->name);
-                strcat(path, "/");
-				UpdateFileData();
-                SetCurrentFileDataByName("..");
-           }
+            strcpy(lastdir, fd->name);
+            // Append subdirectory to current path
+            strcat(path, fd->name);
+            strcat(path, "/");
+            UpdateFileData();
+            SetCurrentFileDataByName("..");
         }
     }
     else if(fd->ftype == FType_LevelDirectory)
