@@ -20,12 +20,12 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 ******************************************************************************/
 
-#ifdef WIN32
+#include "PlatformDefs.h"
 
-#include <windows.h>                    /* Windows header files              */
-
-#elif MAC
-
+#ifdef USE_WIN32
+#include <windows.h>
+#elif defined(USE_LINUX)
+#include <dlfcn.h>
 #endif
 
 #include <stdio.h>                      /* file I/O prototypes               */
@@ -458,16 +458,10 @@ nIndex = -1;
 nUniqueId = 0;
 pMasterEffect = NULL;
 
-#ifdef WIN32
-
 hModule = NULL;
 sDir = NULL;
 
-#elif MAC
-
-// yet to be done
-
-#endif
+PlatformCS_Init(&cs);
 }
 
 /*****************************************************************************/
@@ -477,12 +471,7 @@ sDir = NULL;
 CEffect::~CEffect()
 {
 Unload();
-
-#ifdef WIN32
-
-#elif MAC
-
-#endif
+PlatformCS_Delete(&cs);
 }
 
 /*****************************************************************************/
@@ -494,12 +483,6 @@ bool CEffect::Load(const char *name)
 if (!pHost)                             /* if VST Host undefined             */
   return false;                         /* return without action             */
 
-#ifdef WIN32
-
-#elif MAC 
-
-#endif
-
 Unload();                               /* make sure nothing else is loaded  */
                                         /* pointer to main function          */
 AEffect *(*pMain)(long (*audioMaster)(AEffect *effect,
@@ -509,17 +492,15 @@ AEffect *(*pMain)(long (*audioMaster)(AEffect *effect,
                                   void *ptr,
                                   float opt)) = 0;
 
-#ifdef WIN32
-
-hModule = LoadLibrary(name);          /* try to load the DLL               */
+hModule = PlatformDynLib_Load(name);     /* try to load the plugin            */
 
 if (hModule)                            /* if there, get its main() function */
 {
   pMain = (AEffect * (*)(long (*)(AEffect *,long,long,long,void *,float)))
-          ::GetProcAddress(hModule, "VSTPluginMain");
+          PlatformDynLib_GetProc(hModule, "VSTPluginMain");
   if (!pMain)
     pMain = (AEffect * (*)(long (*)(AEffect *,long,long,long,void *,float)))
-            ::GetProcAddress(hModule, "main");
+            PlatformDynLib_GetProc(hModule, "main");
   }
 
 if (pMain)                              /* initialize effect                 */
@@ -534,8 +515,6 @@ if (pMain)                              /* initialize effect                 */
         pEffect = NULL;
     }
 #else
-    // For non-MSVC compilers, use standard try/catch
-    // Note: This won't catch hardware exceptions like SEH does
     try
     {
         pEffect = pMain(pHost->AudioMasterCallback);
@@ -548,19 +527,10 @@ if (pMain)                              /* initialize effect                 */
 
     if (pEffect == NULL)
     {
-        FreeLibrary(hModule);
+        PlatformDynLib_Free(hModule);
         hModule = NULL;
     }
 }
-
-#elif MAC
-
-// yet to be done
-
-if (pMain)                              /* initialize effect                 */
-  pEffect = pMain(pHost->AudioMasterCallback);
-
-#endif
 
                                         /* check for correctness             */
 if (pEffect && (pEffect->magic != kEffectMagic))
@@ -573,8 +543,12 @@ if (pEffect)
   if (sName)
     strcpy(sName, name);
     sName[len] = 0;
-#ifdef WIN32
+  // Find directory separator (backslash on Windows, forward slash on Linux/Mac)
+#ifdef USE_WIN32
   const char *p = strrchr(name, '\\');
+#else
+  const char *p = strrchr(name, '/');
+#endif
   if (p)
     {
     sDir = new char[p - name + 1];
@@ -584,18 +558,8 @@ if (pEffect)
       sDir[p - name] = '\0';
       }
     }
-#elif MAC
-
-// yet to be done
-#endif
 
   }
-
-#ifdef WIN32
-
-#elif MAC 
-
-#endif
 
 return !!pEffect;
 }
@@ -612,11 +576,9 @@ if (!pHost)                             /* if no VST Host there              */
 EffClose();                             /* make sure it's closed             */
 pEffect = NULL;                         /* and reset the pointer             */
 
-#ifdef WIN32
-
-if (hModule)                            /* if DLL instance available         */
+if (hModule)                            /* if plugin lib instance available   */
   {
-  ::FreeLibrary(hModule);               /* remove it.                        */
+  PlatformDynLib_Free(hModule);         /* remove it.                        */
   hModule = NULL;                       /* and reset the handle              */
   }
 
@@ -625,12 +587,6 @@ if (sDir)                               /* reset module directory            */
   delete[] sDir;
   sDir = NULL;
   }
-
-#elif MAC
-
-// yet to be done!
-
-#endif
 
 if (sName)                              /* reset module name                 */
   {
@@ -676,15 +632,7 @@ return false;                           /* return error for now              */
 
 void * CEffect::OnGetDirectory()
 {
-#ifdef WIN32
-
 return sDir;
-
-#elif MAC
-
-// yet to be done
-
-#endif
 }
 
 /*****************************************************************************/
@@ -811,12 +759,12 @@ return (pEffect->flags & effFlagsProgramChunks) != 0;
 
 void CEffect::EnterCritical()
 {
-	EnterCriticalSection(&cs);              /* inhibit others!                   */
+	PlatformCS_Enter(&cs);                  /* inhibit others!                   */
 }
 
 void CEffect::LeaveCritical()
 {
-LeaveCriticalSection(&cs);              /* reallow others                    */
+PlatformCS_Leave(&cs);                  /* reallow others                    */
 }
 
 /*===========================================================================*/

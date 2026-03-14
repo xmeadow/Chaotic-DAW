@@ -6,23 +6,50 @@
 #if !defined(AFX_STDAFX_H__A9DB83DB_A9FD_11D0_BFD1_444553540000__INCLUDED_)
 #define AFX_STDAFX_H__A9DB83DB_A9FD_11D0_BFD1_444553540000__INCLUDED_
 
-#if _MSC_VER > 1000
+#if defined(_MSC_VER) && _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
+#endif
 
-#define WIN32_LEAN_AND_MEAN    // Exclude rarely-used stuff from Windows headers
-//#define _WIN32_WINNT 0x0500
-#define _WIN32_WINDOWS 0x0500
+// Platform detection and abstraction
+#include "PlatformDefs.h"
 
-// Windows Header Files:
+#ifdef USE_WIN32
+  #define WIN32_LEAN_AND_MEAN
+  #define _WIN32_WINDOWS 0x0500
+#endif
+
+// Windows Header Files (Windows only)
+#ifdef USE_WIN32
 #include <windows.h>
 #include <winuser.h>
-#include <windowsx.h> 
+#include <windowsx.h>
 #include <mmsystem.h>
-#include <wingdi.h> 
+#include <wingdi.h>
+#endif
 
-#include <iostream>       // include important C/C++ stuff
-#include <conio.h>
+// Standard C/C++ Headers (cross-platform)
+#include <iostream>
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+#include <cstdarg>
+#include <cmath>
+#include <cctype>
+#include <ctime>
+#include <cwchar>
+#include <cwctype>
+#include <memory>
+#include <string>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <iterator>
+#include <stdexcept>
+#include <limits>
+#include <cassert>
+
+// C RunTime Header Files
 #include <stdlib.h>
 #include <malloc.h>
 #include <memory.h>
@@ -30,28 +57,16 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <math.h>
-#include <io.h>
 #include <fcntl.h>
 
-// C RunTime Header Files
-#include <stdlib.h>
-#include <malloc.h>
-#include <memory.h>
+#ifdef USE_WIN32
+#include <io.h>
 #include <tchar.h>
+#endif
 
+// Audio file support (provided by build system)
 #include <sndfile.h>
 
-// Local Header Files
-//#include "sampler.h"
-//#include "awful.h"
-//#include "elements.h"
-//#include "params.h"
-
-// TODO: reference additional headers your program requires here
-
-
-
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
 #endif // !defined(AFX_STDAFX_H__A9DB83DB_A9FD_11D0_BFD1_444553540000__INCLUDED_)

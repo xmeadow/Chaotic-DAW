@@ -3,25 +3,22 @@
 #ifndef _AWFUL_H_INCLUDED_
 #define _AWFUL_H_INCLUDED_
 
-#if _MSC_VER > 1000
+#if defined(_MSC_VER) && _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
+#endif
+
+#include "PlatformDefs.h"
+
+#ifdef USE_WIN32
 #define _WIN32_WINNT 0x0500
-
-
-//Find out wich platform we build for
-#if (defined(_WIN32) || defined(_WIN64) || defined(_WIN32_WINNT))
-  #define       USE_WIN32 1
-#else
-  #ifdef LINUX
-    #define     USE_LINUX 1
-  #else
-    #define     USE_MAC 1
-  #endif
 #endif
 
 //Set various defines
+#ifdef USE_WIN32
 #define SPLASH_SCREEN TRUE
+#else
+#define SPLASH_SCREEN FALSE
+#endif
 #define START_SCAN_VST TRUE
 
 #define USE_JUCE_AUDIO
@@ -33,13 +30,17 @@
 #define RELEASEBUILD TRUE
 
 
+#ifdef USE_WIN32
 #include "sndfile.h"
 #include <windows.h>
 #include <portaudio.h>
-#include "math.h"
-#include "Awful_logger.h"
 #include "winreg.h"
 #include "winuser.h"
+#else
+#include <sndfile.h>
+#endif
+#include "math.h"
+#include "Awful_logger.h"
 #ifdef USE_OLD_JUCE
 #include "juce_amalgamated.h"
 #else
@@ -101,13 +102,23 @@
 #define NUM_PIANOROLL_LINES         (120)
 
 #define ENVPOINT_TOUCH_RADIUS       (5)
-#define LOCAL_PLUGIN_FOLDER  ("Plugins\\")
+#ifdef USE_WIN32
+#define LOCAL_PLUGIN_FOLDER            ("Plugins\\")
 #define USER_SAVED_PRESET_PATH         ("Presets\\")
 #define SAMPLES_PATH                   ("Samples\\")
 #define PROJECTS_PATH                  ("Projects\\")
 #define RENDERING_DEFAULT_FOLDER       ("Rendered\\")
 #define VST_EXT_PATH_1                 ("C:\\Program Files\\Steinberg\\VstPlugins\\")
 #define VST_EXT_PATH_2                 ("C:\\Program Files\\VstPlugins\\")
+#else
+#define LOCAL_PLUGIN_FOLDER            ("Plugins/")
+#define USER_SAVED_PRESET_PATH         ("Presets/")
+#define SAMPLES_PATH                   ("Samples/")
+#define PROJECTS_PATH                  ("Projects/")
+#define RENDERING_DEFAULT_FOLDER       ("Rendered/")
+#define VST_EXT_PATH_1                 ("/usr/lib/vst/")
+#define VST_EXT_PATH_2                 ("/usr/local/lib/vst/")
+#endif
 #define PLUGIN_LIST_FILENAME           ("vst_fxlist.lst")
 #define PLUGIN_LIST_FILENAME_XML       ("vst_fxlist.xml")
 #define MITEM_HEIGHT                (18)
@@ -1267,12 +1278,12 @@ extern int              MixCellBasicHeight;
 extern int              MixCellGap;
 extern int              MixCellBasicHeight;
 
-extern int	            currPlayX;	    // Счетчик проигранных фреймов
+extern int	            currPlayX;	    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 extern double           currPlayX_f;
 
-extern float            framesPerPixel;	    // Счетчик проигранных фреймов
+extern float            framesPerPixel;	    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-extern HWND             hWnd;   // Сохранение дискриптора окна
+extern HWND             hWnd;   // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
 extern float            ring[1024];
 extern int              ringPos;
@@ -1365,8 +1376,10 @@ extern int              EffBrowserWidth;
 extern int              EffBrowserCurrentWidth;
 extern int              EffBrowserHeight;
 
+#ifdef USE_WIN32
 extern HDC              hDC;
 extern HGLRC            hRC;
+#endif
 
 extern float            seconds_in_tick;
 extern Element*         delList[];
@@ -1542,7 +1555,7 @@ extern bool             firsttime_plugs_scanned;
 
 extern bool             out_from_dialog;
 
-extern HANDLE           hAudioProcessMutex;
+extern PlatformMutex    hAudioProcessMutex;
 
 extern bool             MakePatternsFat;
 

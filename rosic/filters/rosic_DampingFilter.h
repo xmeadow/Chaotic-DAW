@@ -3,6 +3,10 @@
 
 // rosic-indcludes:
 #include "../math/rosic_RealFunctions.h"
+#include <cmath>
+#ifndef _isnan
+#define _isnan isnan
+#endif
 //#include "../infrastructure/rosic_MutexLock.h"
 
 namespace rosic

@@ -24,6 +24,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #ifndef VSTHOST_H__INCLUDED_
 #define VSTHOST_H__INCLUDED_
 
+#include <cstring>
 #include "audioeffectx.h"               /* VST header files                  */
 
 #if defined(VST_2_4_EXTENSIONS)
@@ -379,17 +380,8 @@ public:
     long nUniqueId;                     /* unique plugin ID (shell plugin)   */
     CEffect *pMasterEffect;             /* for Shell-type plugins            */
 
-#ifdef WIN32
-
-    HMODULE hModule;
+    PlatformDynLib hModule;
     char *sDir;
-
-#elif MAC
-
-// yet to do
-// no idea how things look here...
-
-#endif
 
     virtual bool Load(const char *name);
     virtual bool Unload();
@@ -510,7 +502,7 @@ public:
 	void EnterCritical();
 
 	protected:
-	CRITICAL_SECTION cs;
+	PlatformCriticalSection cs;
 
 };
 

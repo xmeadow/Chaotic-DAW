@@ -1212,7 +1212,7 @@ void Browser::ScanDirForSamples(char *path)
                     if(strcmp(founddata.cFileName, ".") != 0 && 
                        strcmp(founddata.cFileName, "..") != 0)
                     {
-                        sprintf(dir_path, "%s%s%s", path, founddata.cFileName, "\\");
+                        sprintf(dir_path, "%s%s%s", path, founddata.cFileName, "/");
                         ScanDirForSamples(dir_path);
                     }
                 }
@@ -1322,7 +1322,7 @@ void Browser::UpdateFileData()
             strcpy(strfind, temp_path);
             char* cstr = strfind;
             char* kstr = cstr;
-            cstr = strchr(cstr, '\\');
+            cstr = strchr(cstr, '/');
             while(cstr != NULL)
             {
                *cstr = NULL;
@@ -1336,7 +1336,7 @@ void Browser::UpdateFileData()
 
                 cstr++;
                 kstr = cstr;
-                cstr = strchr(cstr, '\\');
+                cstr = strchr(cstr, '/');
             }
 
             //AddDelimiter();
@@ -1423,7 +1423,7 @@ void Browser::UpdateFileData()
     {
         currpath = projectspath;
         strcpy(temp_path, currpath);
-        strcat(temp_path, "\\*.*");
+        strcat(temp_path, "/*.*");
 
         HANDLE fhandle = FindFirstFile(temp_path, &founddata);
         bool with_ext;
@@ -1917,7 +1917,7 @@ void Browser::ActivateEntry(FileData* fd)
             sc = last_sc = path;
             while(sc != NULL)
             {
-                sc = strchr(sc, '\\');
+                sc = strchr(sc, '/');
                 if(sc != NULL)
                 {
                     last_sc = sc;
@@ -1964,7 +1964,7 @@ void Browser::ActivateEntry(FileData* fd)
             sc = last_sc = path;
             while(sc != NULL)
             {
-                sc = strchr(sc, '\\');
+                sc = strchr(sc, '/');
                 if(sc != NULL)
                 {
                     last_sc = sc;
@@ -1978,7 +1978,7 @@ void Browser::ActivateEntry(FileData* fd)
                 last_sc++;
                *last_sc = 0;
                 strcat(path, fd->name);
-                strcat(path, "\\");
+                strcat(path, "/");
 				UpdateFileData();
                 SetCurrentFileDataByName("..");
            }
@@ -1989,11 +1989,11 @@ void Browser::ActivateEntry(FileData* fd)
         char* sc = strstr(path, fd->name);
         if(sc != NULL)
         {
-            sc = strchr(sc, '\\');
+            sc = strchr(sc, '/');
             if(sc != NULL)
             {
                *sc = 0;
-                strcat(path, "\\");
+                strcat(path, "/");
                 UpdateFileData();
                 SetCurrentFileDataByName("..");
             }
@@ -2711,7 +2711,7 @@ void InstrPanel::UpdateIndices()
 // This method completely removes an instrument including all possible references
 void InstrPanel::RemoveInstrument(Instrument* i)
 {
-    WaitForSingleObject(hAudioProcessMutex, INFINITE);
+    PlatformMutex_Lock(hAudioProcessMutex);
     if(current_instr == i)
     {
         current_instr = i->next;
@@ -2788,7 +2788,7 @@ void InstrPanel::RemoveInstrument(Instrument* i)
 
     CheckGoUp();
 
-    ReleaseMutex(hAudioProcessMutex);
+    PlatformMutex_Unlock(hAudioProcessMutex);
 }
 
 Instrument* InstrPanel::AddInstrumentFromBrowser(FileData * fdi, bool bottom)
@@ -3671,7 +3671,7 @@ void Aux::InitMixer()
     current_eff = NULL;
     masterchan.routestr->mchanout = NULL;
 
-    this->hMixMutex = CreateMutex(NULL, FALSE, NULL);
+    this->hMixMutex = PlatformMutex_Create();
 }
 
 void Aux::CleanBuffers(int num_frames)
@@ -3689,7 +3689,7 @@ void Aux::CleanBuffers(int num_frames)
 
 void Aux::Mix(int num_frames)
 {
-    WaitForSingleObject(hMixMutex, INFINITE);
+    PlatformMutex_Lock(hMixMutex);
     for(int mc = 0; mc < NUM_MIXCHANNELS; mc++)
     {
         mchan[mc].workcount = mchan[mc].incount;
@@ -3728,7 +3728,7 @@ void Aux::Mix(int num_frames)
     sendchan[1].Process(num_frames, masterchan.in_buff);
     sendchan[2].Process(num_frames, masterchan.in_buff);
     masterchan.Process(num_frames, NULL);
-    ReleaseMutex(hMixMutex);
+    PlatformMutex_Unlock(hMixMutex);
 }
 
 MixChannel* Aux::GetMixChannelByIndexStr(char * indexstr)
@@ -3762,7 +3762,7 @@ MixChannel* Aux::GetMixChannelByIndexStr(char * indexstr)
 
 MixChannel* Aux::CheckFXString(DigitStr * mixstr)
 {
-    WaitForSingleObject(hMixMutex, INFINITE);
+    PlatformMutex_Lock(hMixMutex);
     int num;
     if(mixstr->digits[0] == '-' || mixstr->digits[1] == '-')
     {
@@ -3821,7 +3821,7 @@ MixChannel* Aux::CheckFXString(DigitStr * mixstr)
             mchan[mc].routestr->mchanout->incount++;
         }
     }
-    ReleaseMutex(hMixMutex);
+    PlatformMutex_Unlock(hMixMutex);
 
     return mixstr->mchanout;
 }
@@ -5532,11 +5532,11 @@ Eff* Aux::AddEffectByType(ModuleSubType etype, MixChannel* mchan)
 
     if(pEff != NULL)
     {
-        WaitForSingleObject(hMixMutex, INFINITE);
+        PlatformMutex_Lock(hMixMutex);
         AddEff(pEff);
         mchan->AddEffect(pEff);
         SetCurrentEffect(pEff);
-        ReleaseMutex(hMixMutex);
+        PlatformMutex_Unlock(hMixMutex);
 
         R(Refresh_Aux);
         R(Refresh_AuxHighlights);
@@ -5568,11 +5568,11 @@ Eff* Aux::AddVSTEffectByPath(const char * fullpath, MixChannel * mchan)
         }
         else
         {
-            WaitForSingleObject(hMixMutex, INFINITE);
+            PlatformMutex_Lock(hMixMutex);
             AddEff((Eff*)pEffect);
             mchan->AddEffect((Eff*)pEffect);
             current_eff = pEffect;
-            ReleaseMutex(hMixMutex);
+            PlatformMutex_Unlock(hMixMutex);
 
             mchan->drawarea->Change();
             R(Refresh_Aux);
@@ -5678,11 +5678,11 @@ Eff* Aux::AddEffectFromBrowser(FileData * fdi, MixChannel* mchan)
 
         if(pEff != NULL)
         {
-            WaitForSingleObject(hMixMutex, INFINITE);
+            PlatformMutex_Lock(hMixMutex);
             AddEff(pEff);
             mchan->AddEffect(pEff);
             SetCurrentEffect(pEff);
-            ReleaseMutex(hMixMutex);
+            PlatformMutex_Unlock(hMixMutex);
 
             mchan->drawarea->Change();
             R(Refresh_Aux);

@@ -24,7 +24,10 @@ Holy Spirit              07/23/2008        Initial version
 //=================================================================================================
 //                             Include Section
 //=================================================================================================
+#include "PlatformDefs.h"
+#ifdef USE_WIN32
 #include "windows.h"
+#endif
 #include "CVSTHost.h"
 //#include "Awful.h"
 #include "Awful_effects.h"
@@ -39,7 +42,11 @@ Holy Spirit              07/23/2008        Initial version
 #define VST_MAX_PARAM_VALUE_LENGTH  (60)
 #define IDLE_TIMER                  (USER_TIMER_MINIMUM + 6)
 #define IDLE_TIMER_INTERVAL         (100)
+#ifdef USE_WIN32
 #define WM_VST_PLUGEDITOR_CLOSED    (WM_USER + 1)
+#else
+#define WM_VST_PLUGEDITOR_CLOSED    0x0401
+#endif
 
 //=================================================================================================
 //***************************** Class Declaration Section *****************************************
@@ -161,7 +168,7 @@ class CVSTPlugin : public Object
         void                    GetErrorText();
         bool                    isWindowActive;
         bool                    isGenerator;
-        HANDLE                  hMutex;
+        PlatformMutex           hMutex;
         CChaoticEffect         *pEffect;
         int                     eff_index;
         CChaoticVSTHost*        pHost;
@@ -218,6 +225,6 @@ public:
 protected:
 
     void* ParentHWND;
-    HANDLE hMutex;
+    PlatformMutex hMutex;
 };
 #endif // _VST_COLLECTION_

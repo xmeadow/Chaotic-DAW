@@ -1,11 +1,12 @@
 #ifndef AUDIO_H
 #define AUDIO_H
 
+#ifdef USE_WIN32
 #include <portaudio.h>
+#endif
 #include "awful_paramedit.h"
 #include "awful.h"
 #include "awful_elements.h"
-//#include "awful_audio.h"
 #include "awful_renderer.h"
 #include "awful_midi.h"
 #include "awful_events_triggers.h"
@@ -26,10 +27,12 @@ class AudioCallback : public AudioIODeviceCallback
 //This is most current frame which is valid even during current callback processing
 extern long                 curr_frame;
 
+#ifdef USE_WIN32
 //Parameters of active selected output audio device
 extern PaStreamParameters   outputParameters;
 //Parameters of active selected input audio device
 extern PaStreamParameters   inputParameters;
+#endif
 extern RNDR_CONFIG_DATA_T   renderConfig;
 
 extern CAudioDeviceManager*  audioDeviceManager;
@@ -162,11 +165,13 @@ extern void                 OutsyncTriggers();
 extern void                 ResetUnstableElements();
 extern void                 Place_Note(Instrument *instr, int note, float vol, unsigned long start_frame, unsigned long end_frame);
 extern void                 UpdatePerBaseFrame(Playback* pb);
+#ifdef USE_WIN32
 extern PaError              PortAudio_Init();
 extern PaError              PortAudio_Deinit();
 extern PaError              PortAudio_Start();
 extern PaError              PortAudio_Stop();
 extern void                 PortAudio_UpdateDevices(int out_device_idx, int in_device_idx);
+#endif
 extern void                 PlayMain();
 extern void                 StopMain(bool forceresetmix = false);
 extern ParamSet*            New_CustomTrackParams(int track_num);

@@ -192,7 +192,7 @@ CGenerator* AddInternalGenerator(const char* path, const char* alias)
             pGen = new Synth;
             pGen->SetAlias((char*)alias);
             pGen->SetName("Chaosynth");
-            pGen->SetPresetPath(".\\Presets\\Chaotic\\");
+            pGen->SetPresetPath("./Presets/Chaotic\\");
             pGen->SetPath("internal://synth1");
             break;
         default:
@@ -2058,7 +2058,7 @@ SineNoise::SineNoise()
 {
     SetName("SineNoise");   // Name, displayed on instrument panel
 
-    strcpy(this->preset_path, ".\\Presets\\SineNoise\\");   // Preset path
+    strcpy(this->preset_path, "./Presets/SineNoise\\");   // Preset path
     strcpy(this->path,"internal://sinenoise");    // Internal path
     uniqueID = MAKE_FOURCC('S','N','O','I');    // unique ID
 }
@@ -2322,7 +2322,7 @@ Synth::Synth()
 
     Preset preset(NULL);
     strcpy(preset.name, "Square lead");
-    strcpy(preset.path, ".\\Presets\\Chaotic\\Square lead.cxml");
+    strcpy(preset.path, "./Presets/Chaotic\\Square lead.cxml");
     preset.native = true;
     File f(preset.path);
     if(f.exists())

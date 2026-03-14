@@ -528,7 +528,7 @@ public:
     SliderZoom* slzoom;
     // Mixing stuff
     int         hoffs;
-    HANDLE      hMixMutex;
+    PlatformMutex hMixMutex;
     MixChannel  mchan[NUM_MIXCHANNELS];
     MixChannel  sendchan[4];
     MixChannel  masterchan;

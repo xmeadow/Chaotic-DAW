@@ -1,5 +1,6 @@
 #include "awful_audiohost.h"
 
+#ifdef USE_WIN32
 AW_HOST_ERROR_CODE_T Host_GetDeviceCount(int *count)
 {
 	AW_HOST_ERROR_CODE_T err_code = AW_HOST_NO_ERROR;
@@ -41,3 +42,4 @@ AW_HOST_ERROR_CODE_T Host_GetDeviceInfo(const PaDeviceInfo **ppDevInfo, int inde
 	}
 	return err_code;
 }
+#endif // USE_WIN32

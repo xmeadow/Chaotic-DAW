@@ -2741,6 +2741,7 @@ void ConfigComponent::comboBoxChanged (AComboBox* comboBoxThatHasChanged)
 
         UpdateComponentsVisibility();
     }
+#ifndef USE_JUCE_AUDIO
     else if (comboBoxThatHasChanged == comboAudInput)
     {
         int curIndex = comboAudInput->getSelectedId();
@@ -2776,6 +2777,7 @@ void ConfigComponent::comboBoxChanged (AComboBox* comboBoxThatHasChanged)
         PortAudio_Stop();
         PortAudio_Start();
     }
+#endif
     else if(comboBoxThatHasChanged == int_comboBox)
     {
         WorkingInterpolationMethod = comboBoxThatHasChanged->getSelectedId();
@@ -3191,7 +3193,7 @@ RenderComponent::RenderComponent()      //: quitButton(0)
     expButt->addButtonListener(this);
 
     addAndMakeVisible(resButt = new ATextButton(String::empty));
-    resButt->setButtonText(T("Set folder to \\Rendered"));
+    resButt->setButtonText(T("Set folder to /Rendered"));
     resButt->addButtonListener(this);
 
 
@@ -3409,7 +3411,7 @@ void RenderComponent::buttonClicked(Button* buttonThatWasClicked)
         {
             outdir = pDirSelector->getResult();
             String str = outdir.getFullPathName();
-            textFolderStore->setText(str + "\\", false);
+            textFolderStore->setText(str + "/", false);
 
             // Remember selected folder in renderer settings
             String strFolder(textFolderStore->getText());
@@ -3426,7 +3428,7 @@ void RenderComponent::buttonClicked(Button* buttonThatWasClicked)
     {
         outdir = File(RENDERING_DEFAULT_FOLDER);
         String str = outdir.getFullPathName();
-        textFolderStore->setText(str + "\\", false);
+        textFolderStore->setText(str + "/", false);
 
         // Remember selected folder in renderer settings
         String strFolder(textFolderStore->getText());

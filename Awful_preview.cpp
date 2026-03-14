@@ -21,7 +21,7 @@ extern void         Preview_ForceCleanForInstrument(Instrument* instr);
 
 PreviewSlot         PrevSlot[MAX_PREVIEW_ELEMENTS];
 PreviewSlot         PrevMouse;
-HANDLE              hPreviewMutex;
+PlatformMutex       hPreviewMutex;
 
 unsigned int        NumPrevs;
 
@@ -38,7 +38,7 @@ void Preview_Init()
         PrevSlot[ic].keybound_pianokey = false;
     }
     NumPrevs = 0;
-    hPreviewMutex = CreateMutex(NULL, FALSE, NULL);
+    hPreviewMutex = PlatformMutex_Create();
 }
 
 bool Preview_StopPerPattern(Element* el)

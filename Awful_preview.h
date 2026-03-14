@@ -8,7 +8,7 @@
 
 
 extern PreviewSlot  PrevSlot[MAX_PREVIEW_ELEMENTS];
-extern HANDLE       hPreviewMutex;
+extern PlatformMutex hPreviewMutex;
 
 typedef struct PreviewSlot
 {

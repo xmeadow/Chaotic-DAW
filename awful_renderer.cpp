@@ -13,7 +13,7 @@ Renderer::Renderer()
     this->RndrThread = 0;
     this->ullCurrentFramePos = 0;
     this->ullSongFrameLength = 0;
-    this->hMutex = CreateMutex(NULL, FALSE, NULL);
+    this->hMutex = PlatformMutex_Create();
 }
 
 Renderer::~Renderer()
@@ -26,12 +26,12 @@ Renderer::~Renderer()
 
 void Renderer::AcquireSema()
 {
-    WaitForSingleObject(this->hMutex,INFINITE);
+    PlatformMutex_Lock(this->hMutex);
 }
 
 void Renderer::ReleaseSema()
 {
-    ReleaseMutex(this->hMutex);
+    PlatformMutex_Unlock(this->hMutex);
 }
 
 /* API to configure renderer parameters */
@@ -410,9 +410,15 @@ RNDR_ERROR_T Renderer::Close()
     return (ret_val);
 }
 
+#ifdef USE_WIN32
 DWORD Renderer::RNDR_ThreadProc(LPVOID lpParam)
 {
     DWORD           ret_val = 0;
+#else
+void* Renderer::RNDR_ThreadProc(void* lpParam)
+{
+    unsigned long   ret_val = 0;
+#endif
     Renderer*       pThis = (Renderer*) lpParam;
     RNDR_StreamCode ret_code = RNDR_Abort;
     RndrCallback*   pCallBack = pThis->pCallBack;
@@ -458,6 +464,10 @@ DWORD Renderer::RNDR_ThreadProc(LPVOID lpParam)
 
     //ret_val = STILL_ACTIVE;
 
+#ifdef USE_WIN32
     return ret_val;
+#else
+    return NULL;
+#endif
 }
 

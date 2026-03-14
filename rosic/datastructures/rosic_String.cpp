@@ -1,4 +1,17 @@
 #include "rosic_String.h"
+#include <cstdio>
+#include <cmath>
+#ifndef _isnan
+#define _isnan isnan
+#endif
+#ifndef itoa
+static inline char* itoa(int value, char* buf, int radix) {
+    if (radix == 10) sprintf(buf, "%d", value);
+    else if (radix == 16) sprintf(buf, "%x", value);
+    else buf[0] = '\0';
+    return buf;
+}
+#endif
 using namespace rosic;
 
 //-------------------------------------------------------------------------------------------------

@@ -1,7 +1,11 @@
 #ifndef _AWFUL_RENDERER_
 #define _AWFUL_RENDERER_
 #include "Awful.h"
+#ifdef USE_WIN32
 #include "sndfile.h"
+#else
+#include <sndfile.h>
+#endif
 
 #define RNDR_MAX_FILENAME_LENGTH 300
 
@@ -130,7 +134,7 @@ public:
     // pause a rendering thread for a while. If call Start() again, rendering will resume
     RNDR_ERROR_T Pause();
     // resume paused rendering
-    RNDR_ERROR_T Renderer::Resume();
+    RNDR_ERROR_T Resume();
     // stop rendering thread. Calling of Start() again will start a rendering from the beginning
     RNDR_ERROR_T Stop();
     // Stop and close rendering thread, close file stream 
@@ -138,7 +142,7 @@ public:
 
 private:
     // semaphore handle 
-    HANDLE        hMutex;
+    PlatformMutex hMutex;
 
     // Callback function 
     RndrCallback* pCallBack;
@@ -148,7 +152,11 @@ private:
     // Configuration record 
     RNDR_CONFIG_DATA_T config;
     //Main thread procedure
+#ifdef USE_WIN32
     static DWORD  RNDR_ThreadProc(LPVOID lpParam);
+#else
+    static void*  RNDR_ThreadProc(void* lpParam);
+#endif
     HANDLE        RndrThread;
     SNDFILE*      out_file;
     float*        RENDER_BUFF;

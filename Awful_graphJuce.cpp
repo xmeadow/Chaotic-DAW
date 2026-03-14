@@ -1345,7 +1345,7 @@ int J_TextSmall_xy(Graphics& g, int x, int y, const char *str)
 	return ti->getStringWidth(s);
 }
 
-int J_TextSmall_type(Graphics& g, const char *str)        // Заказная функция "Печати" GL
+int J_TextSmall_type(Graphics& g, const char *str)        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ" GL
 {
     g.setFont(*ti);
 	String s = String(str);
@@ -11455,7 +11455,7 @@ void J_Browser(Graphics& g, Browser* brw, int x, int y, int w, int h)
                                 }
                                 else
                                     strcpy(dname, fd->name);
-                                strcat(dname, "\\");
+                                strcat(dname, "/");
                             }
                             else
                                 strcpy(dname, fd->name);

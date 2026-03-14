@@ -67,7 +67,7 @@ typedef enum LastClicked
 class Mouse
 {
 public:
-    __int64     mmode;
+    long long   mmode;
     LastClicked lastclick;
     SelMode     selmode;
     BrwType     btype;

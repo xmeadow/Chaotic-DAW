@@ -2,7 +2,16 @@
 // Awful.cpp 
 #include "stdafx.h"
 //#include "resource.h"
+#include "PlatformDefs.h"
+#ifdef USE_WIN32
 #include <windows.h>
+#include <direct.h>
+#include "shlwapi.h"
+#else
+#include <unistd.h>
+#include <sys/stat.h>
+#include <dirent.h>
+#endif
 
 #include "awful.h"
 #include "awful_audio.h"
@@ -19,8 +28,6 @@
 #include "awful_events_triggers.h"
 #include "awful_tracks_lanes.h"
 #include "VSTCollection.h"
-#include <direct.h>
-#include "shlwapi.h"
 #include "awful_renderer.h"
 #include "Awful_JuceComponents.h"
 #ifdef USE_OLD_JUCE
@@ -676,7 +683,7 @@ MouseCursor*     cursSlide;
 MouseCursor*     cursBrush;
 MouseCursor*     cursSelect;
 
-HANDLE          hAudioProcessMutex;
+PlatformMutex   hAudioProcessMutex;
 
 bool            MakePatternsFat;
 bool            JustClickedPattern;
@@ -801,7 +808,7 @@ void CleanElements()
 
 void CleanProject()
 {
-    WaitForSingleObject(hAudioProcessMutex, INFINITE);
+    PlatformMutex_Lock(hAudioProcessMutex);
 
     Selection_Reset();
     Looping_Reset();
@@ -911,7 +918,7 @@ void CleanProject()
     ResetChangesIndicate();
     MainWnd->UpdateTitle();
 
-    ReleaseMutex(hAudioProcessMutex);
+    PlatformMutex_Unlock(hAudioProcessMutex);
 }
 
 void ActualizeStepSeqPositions()
@@ -1446,8 +1453,13 @@ bool SaveProject(bool as)
 
     if(as == true || PrjData.newproj == true)
     {
+#ifdef USE_WIN32
         String str = T(".\\Projects");
         str += "\\";
+#else
+        String str = T("./Projects");
+        str += "/";
+#endif
         str += PrjData.projname;
 
         FileChooser fc(T("Save project as..."),
@@ -1535,7 +1547,11 @@ void LoadProject(File* f)
             SetCurrentDirectory(szWorkingDirectory);
 
             FileChooser fc (T("Choose a file to open"),
+#ifdef USE_WIN32
                             File(T(".\\Projects")),
+#else
+                            File(T("./Projects")),
+#endif
                             "*.cmm",
                             true);
             
@@ -1614,7 +1630,7 @@ void SaveSettings()
        xmlSettings.addChildElement(xmlAudio);
 #endif
 
-    String  sFilePath(".\\settings.xml");
+    String  sFilePath("./settings.xml");
     File    sFile(sFilePath);
     xmlSettings.writeToFile(sFile, String::empty);
 }
@@ -2194,15 +2210,15 @@ void AddNewElement(Element* el, bool preventundo)
 
     if(Playing)
     {
-        WaitForSingleObject(hAudioProcessMutex, INFINITE);
+        PlatformMutex_Lock(hAudioProcessMutex);
         pbkMain->UpdateQueuedEv();
-        ReleaseMutex(hAudioProcessMutex);
+        PlatformMutex_Unlock(hAudioProcessMutex);
     }
     else if(aux_panel->isPlaying())
     {
-        WaitForSingleObject(hAudioProcessMutex, INFINITE);
+        PlatformMutex_Lock(hAudioProcessMutex);
         pbkAux->UpdateQueuedEv();
-        ReleaseMutex(hAudioProcessMutex);
+        PlatformMutex_Unlock(hAudioProcessMutex);
     }
 }
 
@@ -5738,7 +5754,7 @@ void RescanPlugins(bool full, bool brwupdate)
 
 void DeleteEffect(Eff* eff)
 {
-    WaitForSingleObject(hAudioProcessMutex, INFINITE);
+    PlatformMutex_Lock(hAudioProcessMutex);
     if(aux_panel->current_eff == eff && 
         (mixBrw->brwmode == Browse_Params || mixBrw->brwmode == Browse_Presets))
     {
@@ -5753,7 +5769,7 @@ void DeleteEffect(Eff* eff)
 
     RemoveEff(eff);
 
-    ReleaseMutex(hAudioProcessMutex);
+    PlatformMutex_Unlock(hAudioProcessMutex);
 
     R(Refresh_GridContent);
 }
@@ -6987,7 +7003,7 @@ void DragNDrop_Drop(int mouse_x, int mouse_y, unsigned int flags)
     {
         if(M.active_dropmixchannel != NULL)
         {
-            WaitForSingleObject(aux_panel->hMixMutex, INFINITE);
+            PlatformMutex_Lock(aux_panel->hMixMutex);
             FileData* fd = (FileData*)M.drag_data.drag_stuff;
             Eff* eff = aux_panel->AddEffectFromBrowser(fd, M.active_dropmixchannel);
             M.lastclick = LastClicked_Effect;
@@ -6996,7 +7012,7 @@ void DragNDrop_Drop(int mouse_x, int mouse_y, unsigned int flags)
                 DragNDrop_PlaceEffect(eff);
             }
             M.active_dropmixchannel = NULL;
-            ReleaseMutex(aux_panel->hMixMutex);
+            PlatformMutex_Unlock(aux_panel->hMixMutex);
 
             R(Refresh_Aux);
             R(Refresh_AuxHighlights);
@@ -7011,7 +7027,7 @@ void DragNDrop_Drop(int mouse_x, int mouse_y, unsigned int flags)
                mouse_y <= M.active_dropmixchannel->ry2 &&
                eff != M.dropeff1 && eff != M.dropeff2)
             {
-                WaitForSingleObject(aux_panel->hMixMutex, INFINITE);
+                PlatformMutex_Lock(aux_panel->hMixMutex);
                 if(flags & kbd_ctrl)
                 {
                     Eff* neff = eff->Clone(M.active_dropmixchannel->mc_main);
@@ -7027,7 +7043,7 @@ void DragNDrop_Drop(int mouse_x, int mouse_y, unsigned int flags)
                 }
                 M.active_dropmixchannel->AddEffect(eff);
     			DragNDrop_PlaceEffect(eff);
-                ReleaseMutex(aux_panel->hMixMutex);
+                PlatformMutex_Unlock(aux_panel->hMixMutex);
 
                 R(Refresh_Aux);
                 R(Refresh_AuxHighlights);
@@ -9642,9 +9658,9 @@ void CreateContextMenu(int mouse_x, int mouse_y)
                             filedata->list_index = -1;
                             if(menu->curreff == NULL)
                             {
-                                WaitForSingleObject(aux_panel->hMixMutex, INFINITE);
+                                PlatformMutex_Lock(aux_panel->hMixMutex);
                                 aux_panel->AddEffectFromBrowser(filedata, menu->mchan);
-                                ReleaseMutex(aux_panel->hMixMutex);
+                                PlatformMutex_Unlock(aux_panel->hMixMutex);
                             }
                             else
                             {
@@ -9652,13 +9668,13 @@ void CreateContextMenu(int mouse_x, int mouse_y)
                                 M.dropeff2 = menu->curreff->cnext;
                                 M.active_dropmixchannel = menu->mchan;
                                 DeleteEffect(menu->curreff);
-                                WaitForSingleObject(aux_panel->hMixMutex, INFINITE);
+                                PlatformMutex_Lock(aux_panel->hMixMutex);
                                 Eff* eff = aux_panel->AddEffectFromBrowser(filedata, menu->mchan);
                                 if(eff != NULL)
                                 {
                                     DragNDrop_PlaceEffect(eff);
                                 }
-                                ReleaseMutex(aux_panel->hMixMutex);
+                                PlatformMutex_Unlock(aux_panel->hMixMutex);
                             }
                             break;
                         }
@@ -11673,11 +11689,11 @@ void Load_Default_Instruments()
 {
     num_instrs = 0;
 
-    AddSample("Samples\\Kicked.wav", "808.wav", NULL);
-    AddSample("Samples\\Jazzy Hat.wav", "Jazzy Hat.wav", NULL);
-    AddSample("Samples\\Closed Hat.wav", "Closed Hat.wav", NULL);
-    AddSample("Samples\\snar_04m1.wav", "snar_04m1.wav", NULL);
-    AddSample("Samples\\Crash 2.wav", "Crash 2.wav", NULL);
+    AddSample("Samples/Kicked.wav", "808.wav", NULL);
+    AddSample("Samples/Jazzy Hat.wav", "Jazzy Hat.wav", NULL);
+    AddSample("Samples/Closed Hat.wav", "Closed Hat.wav", NULL);
+    AddSample("Samples/snar_04m1.wav", "snar_04m1.wav", NULL);
+    AddSample("Samples/Crash 2.wav", "Crash 2.wav", NULL);
 
     LoadMetronomeSamples();
 
@@ -11763,6 +11779,7 @@ void Init_InternalPlugins()
 
 void GetStartupDir()
 {
+#ifdef USE_WIN32
     //ExtractFilePath(Application->ExeName);
     //GetFullPathName(szWorkingDirectory, );
     char name[2222];
@@ -11789,6 +11806,17 @@ void GetStartupDir()
     }
 
     strcpy(szWorkingDirectory, name);
+#else
+    char cwd[PATH_MAX];
+    if (getcwd(cwd, sizeof(cwd))) {
+        szWorkingDirectory = (char*)malloc(strlen(cwd) + 2);
+        strcpy(szWorkingDirectory, cwd);
+        strcat(szWorkingDirectory, "/");
+    } else {
+        szWorkingDirectory = (char*)malloc(3);
+        strcpy(szWorkingDirectory, "./");
+    }
+#endif
 }
 
 void Init_WorkData()
@@ -11843,7 +11871,7 @@ void Init_WorkData()
     Octave = 5;
     lastFrame = 0;
 
-    hAudioProcessMutex = CreateMutex(NULL, FALSE, NULL);
+    hAudioProcessMutex = PlatformMutex_Create();
 
     ev0 = new Event;
     ev0->frame = 0;
@@ -11915,11 +11943,19 @@ void Init_WorkData()
 
     // Init rendering configuration
     //memset(&renderConfig, 0, sizeof(RNDR_CONFIG_DATA_T));
+#ifdef USE_WIN32
     strcpy(renderConfig.file_name, ".\\test.wav");
+#else
+    strcpy(renderConfig.file_name, "./test.wav");
+#endif
     renderConfig.format = RNDR_FORMAT_WAVE;
     renderConfig.inbuff_len = 2048;
     renderConfig.quality = RNDR_QUALITY_32BIT;
+#ifdef USE_WIN32
     String str(T(".\\Rendered\\"));
+#else
+    String str(T("./Rendered/"));
+#endif
     renderConfig.output_dir = str;
 
     renderConfig.q1 = 2;
@@ -11945,11 +11981,17 @@ void Init_WorkData()
         {
             ::GetCurrentDirectory(length, szWorkingDirectory);
         }
+#ifdef USE_WIN32
         strcat(szWorkingDirectory, "\\");
+#else
+        strcat(szWorkingDirectory, "/");
+#endif
     }
 
+#ifdef USE_WIN32
     if(szWorkingDirectory[0] >= 0x61)
         szWorkingDirectory[0] -= 0x20;
+#endif
     SetCurrentDirectory(szWorkingDirectory);
 
     // Create required subdirectories if they don't exist
@@ -12210,7 +12252,7 @@ void ClearVSTListFile()
     char   list_path[MAX_PATH_STRING] = {0};
 
     /* Check whether file-list of already scanned plugins exists */
-    sprintf(list_path, "%s%s", ".\\", PLUGIN_LIST_FILENAME);
+    sprintf(list_path, "%s%s", "./", PLUGIN_LIST_FILENAME);
 
     File f(list_path);
     if(f.existsAsFile())
@@ -12231,7 +12273,11 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
     char              temp_path[MAX_PATH_STRING*5]         = {0};
     //XmlElement*       xmlPlug;
 
+#ifdef USE_WIN32
     sprintf(temp_path, "%s%s", path, "*.dll\0");
+#else
+    sprintf(temp_path, "%s%s", path, "*.so\0");
+#endif
     shandle = FindFirstFile(temp_path, &founddata);
     if(shandle != INVALID_HANDLE_VALUE)
     {
@@ -12334,7 +12380,7 @@ void ReadPluginsFromFile()
 {
     ModListEntry   *pListEntry = NULL;
     XmlElement*     xmlChild = NULL;
-    File            xmlFile(T(".\\vst_fxlist.xml"));
+    File            xmlFile(T("./vst_fxlist.xml"));
     XmlDocument     xmlDoc(xmlFile);
     XmlElement*     xmlPlugList = xmlDoc.getDocumentElement();
 
@@ -12440,7 +12486,7 @@ void Init_ScanForVST(ScanThread* thread)
                 }
             }
 
-            File xmlFile(T(".\\vst_fxlist.xml"));
+            File xmlFile(T("./vst_fxlist.xml"));
             // now re-write list file by new list if needed
             if (xmlFile.existsAsFile() == false || NeedUpdateList == true)
             {
@@ -12568,7 +12614,7 @@ LRESULT CALLBACK GLWndProc(HWND    hWnd,
                            WPARAM  wParam,
                            LPARAM  lParam)
 {
-    RECT    Screen;        // используется позднее для размеров окна
+    RECT    Screen;        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     GLuint  PixelFormat;
     unsigned key;
 
@@ -12579,41 +12625,41 @@ LRESULT CALLBACK GLWndProc(HWND    hWnd,
 
 	//PAINTSTRUCT ps;
 	//HDC hdc;s
-    switch (message)        // Тип сообщения
+    switch (message)        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         case WM_CREATE:
         {
             static  PIXELFORMATDESCRIPTOR pfd =
             {
-                    sizeof(PIXELFORMATDESCRIPTOR),  // Размер этой структуры
-            1,                              // Номер версии (?)
-            PFD_DRAW_TO_WINDOW |            // Формат для Окна
-            PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER,             // Формат для OpenGL
-											// Формат для двойного буфера
-            PFD_TYPE_RGBA,                  // Требуется RGBA формат
-            32,                             // Выбор 32 бит глубины цвета
-            0, 0, 0, 0, 0, 0,               // Игнорирование цветовых битов (?)
-            0,                              // нет буфера прозрачности
-            0,                              // Сдвиговый бит игнорируется (?)
-            0,                              // Нет буфера аккумуляции
-            0, 0, 0, 0,                     // Биты аккумуляции игнорируются (?)
-            0,                              // 16 битный Z-буфер (буфер глубины) 
-            4,                              // Есть буфер траффарета
-            0,                              // Нет вспомогательных буферов (?)
-            PFD_MAIN_PLANE,                 // Главный слой рисования
-            0,                              // Резерв (?)
-            0, 0, 0                         // Маски слоя игнорируются (?)
+                    sizeof(PIXELFORMATDESCRIPTOR),  // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            1,                              // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (?)
+            PFD_DRAW_TO_WINDOW |            // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+            PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER,             // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ OpenGL
+											// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+            PFD_TYPE_RGBA,                  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ RGBA пїЅпїЅпїЅпїЅпїЅпїЅ
+            32,                             // пїЅпїЅпїЅпїЅпїЅ 32 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+            0, 0, 0, 0, 0, 0,               // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (?)
+            0,                              // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            0,                              // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (?)
+            0,                              // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            0, 0, 0, 0,                     // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (?)
+            0,                              // 16 пїЅпїЅпїЅпїЅпїЅпїЅ Z-пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ) 
+            4,                              // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            0,                              // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (?)
+            PFD_MAIN_PLANE,                 // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            0,                              // пїЅпїЅпїЅпїЅпїЅпїЅ (?)
+            0, 0, 0                         // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (?)
             };
 
-            hDC = GetDC(hWnd);      // Получить контекст устройства для окна
+            hDC = GetDC(hWnd);      // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
             PixelFormat = ChoosePixelFormat(hDC, &pfd);
-                    // Найти ближайшее совпадение для нашего формата пикселов
+                    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             if(!PixelFormat)
             {
                 MessageBox(0, "Can't Find A Suitable PixelFormat.", "Error", MB_OK | MB_ICONERROR);
                 PostQuitMessage(0);
-                        // Это сообщение говорит, что программа должна завершится
-                break;  // Предтовращение повтора кода
+                        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                break;  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
             }
 
             if(!SetPixelFormat(hDC,PixelFormat,&pfd))
@@ -12869,8 +12915,8 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,
 {
     hInst = hInstance;
 
-    MSG             msg;    // Структура сообщения Windows
-    WNDCLASS        wc;		// Структура класса Windows для установки типа окна
+    MSG             msg;    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Windows
+    WNDCLASS        wc;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ Windows пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
     // Register Main Window Class
     wc.style                =  CS_HREDRAW|CS_VREDRAW|CS_OWNDC;
@@ -12892,7 +12938,7 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,
 
     // Create Main Window
     hWnd = CreateWindow("OpenGL WinClass",
-                        "Chaotic - Project1", // Заголовок вверху окна
+                        "Chaotic - Project1", // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
                          WS_POPUP | WS_SYSMENU |
                          WS_CLIPCHILDREN |
                          WS_CLIPSIBLINGS |
@@ -12900,8 +12946,8 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,
                          WS_MINIMIZEBOX |
                          WS_OVERLAPPED |
                          WS_THICKFRAME | WS_MAXIMIZEBOX,
-                         100, 50,					// Позиция окна на экране
-                         1100, 700,					// Ширина и высота окна
+                         100, 50,					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+                         1100, 700,					// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
                          NULL, 
                          NULL,
                          hInstance,
@@ -12917,13 +12963,13 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,
         gHwnd = hWnd;
     }
 
-//    DEVMODE dmScreenSettings;                       // Режим работы
+//    DEVMODE dmScreenSettings;                       // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-//    memset(&dmScreenSettings, 0, sizeof(DEVMODE));          // Очистка для хранения установок
-//    dmScreenSettings.dmSize = sizeof(DEVMODE);              // Размер структуры Devmode
-//    dmScreenSettings.dmPelsWidth    = 800;                  // Ширина экрана
-//    dmScreenSettings.dmPelsHeight   = 600;                  // Высота экрана
-//    dmScreenSettings.dmFields       = DM_PELSWIDTH | DM_PELSHEIGHT; // Режим Пиксела
+//    memset(&dmScreenSettings, 0, sizeof(DEVMODE));          // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+//    dmScreenSettings.dmSize = sizeof(DEVMODE);              // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Devmode
+//    dmScreenSettings.dmPelsWidth    = 800;                  // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+//    dmScreenSettings.dmPelsHeight   = 600;                  // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+//    dmScreenSettings.dmFields       = DM_PELSWIDTH | DM_PELSHEIGHT; // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 //    ChangeDisplaySettings(&dmScreenSettings, CDS_FULLSCREEN);
 
     HWND splash_hwnd = 0;
@@ -13037,7 +13083,7 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,
         }
 
         return msg.wParam;
-        if (keys[VK_ESCAPE]) SendMessage(hWnd, WM_CLOSE, 0, 0);    // Если ESC - выйти
+        if (keys[VK_ESCAPE]) SendMessage(hWnd, WM_CLOSE, 0, 0);    // пїЅпїЅпїЅпїЅ ESC - пїЅпїЅпїЅпїЅпїЅ
     }
 
     KillGLWindow();
@@ -13153,7 +13199,7 @@ public:
         //xmlPlugList = NULL;
         //xmlPlugList = new XmlElement(T("Chaotic plugins list"));
         /*
-        sprintf(list_path_xml, "%s%s", ".\\", PLUGIN_LIST_FILENAME_XML);
+        sprintf(list_path_xml, "%s%s", "./", PLUGIN_LIST_FILENAME_XML);
 
         xmlPlugList = new XmlElement(T("Chaotic plugins list"));
         xmlFile = File(list_path_xml);
@@ -13177,7 +13223,7 @@ public:
 
         // Load settings from file, if it exists
         XmlElement* xmlAudio = NULL;
-        File sFile(T(".\\settings.xml"));
+        File sFile(T("./settings.xml"));
         if(sFile.existsAsFile())
         {
             XmlDocument sDoc(sFile);

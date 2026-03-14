@@ -4,7 +4,9 @@
 
 #include "awful_params.h"
 #include "awful_parammodule.h"
+#ifdef USE_WIN32
 #include <direct.h>
+#endif
 #include <errno.h>
 #include <algorithm>
 
@@ -547,7 +549,11 @@ void ParamModule::SavePresetAs(char * preset_name)
         pCurPos = &(working_dir[length + 1]);
 
         //find next/next durectory to examine
+#ifdef USE_WIN32
         while ((pCurPos = strstr(pCurPos, "\\")) != NULL)
+#else
+        while ((pCurPos = strstr(pCurPos, "/")) != NULL)
+#endif
         {
             //length of current processing directory
             length = pCurPos - working_dir;

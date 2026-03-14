@@ -238,7 +238,7 @@ CVSTPlugin::CVSTPlugin(Object * owner, int index, CChaoticVSTHost* pHost, void* 
 CVSTPlugin::~CVSTPlugin()
 {
 	int i;
-    WaitForSingleObject(this->hMutex,INFINITE);
+    PlatformMutex_Lock(this->hMutex);
 	if (this->inBufs != NULL)
 	{
 		for (i = 0; i < this->nAllocatedInbufs; ++i)
@@ -276,7 +276,7 @@ CVSTPlugin::~CVSTPlugin()
     //    delete this->pWnd;
     //}
 
-	ReleaseMutex(this->hMutex);
+	PlatformMutex_Unlock(this->hMutex);
 }
 
 
@@ -361,16 +361,16 @@ void CVSTPlugin::Close()
 
 void CVSTPlugin::Idle()
 {
-    //WaitForSingleObject(this->hMutex,INFINITE);
+    //PlatformMutex_Lock(this->hMutex);
     this->pEffect->EffIdle();
-    //ReleaseMutex(this->hMutex);
+    //PlatformMutex_Unlock(this->hMutex);
 }
 
 void CVSTPlugin::EditIdle()
 {
-    //WaitForSingleObject(this->hMutex,INFINITE);
+    //PlatformMutex_Lock(this->hMutex);
     this->pEffect->EffEditIdle();
-    //ReleaseMutex(this->hMutex);
+    //PlatformMutex_Unlock(this->hMutex);
 }
 /*==================================================================================================
 
@@ -401,7 +401,7 @@ POST-CONDITIONS:
 void CVSTPlugin::ProcessData(float* in_buff, float* out_buff, int buff_size)
 {
 	int i,j;
-    WaitForSingleObject(this->hMutex,INFINITE);
+    PlatformMutex_Lock(this->hMutex);
 	//If effect has only one input then mix both L and R to one mono channel
     if (in_buff != NULL)
 	{
@@ -465,7 +465,7 @@ void CVSTPlugin::ProcessData(float* in_buff, float* out_buff, int buff_size)
 			out_buff[i*2+1] = this->outBufs[1][i];
 		}
 	}
-	ReleaseMutex(this->hMutex);
+	PlatformMutex_Unlock(this->hMutex);
 }
 
 void CVSTPlugin::SetParam(long index, float Value)
@@ -530,7 +530,7 @@ void CVSTPlugin::GetDisplayName(char *name, unsigned int length)
 	char szBuf[256]="";
 	size_t len = 0;
 
-	WaitForSingleObject(this->hMutex,INFINITE);
+	PlatformMutex_Lock(this->hMutex);
 
 	this->pEffect->EffGetProductString(szBuf);
 	if (strlen(szBuf) == 0)
@@ -576,7 +576,7 @@ void CVSTPlugin::GetDisplayName(char *name, unsigned int length)
         }
         strncpy(name, szBuf, len);
     }
-	ReleaseMutex(this->hMutex);
+	PlatformMutex_Unlock(this->hMutex);
 }
 
 long CVSTPlugin::GetNumPresets()
@@ -841,7 +841,7 @@ VSTCollection::VSTCollection(void* MainWindowHandle)
     this->pMainHost->SetSampleRate(fSampleRate);
     this->pMainHost->SetTempo(beats_per_minute);
     this->ParentHWND = MainWindowHandle;
-    this->hMutex = CreateMutex(NULL, FALSE, NULL);
+    this->hMutex = PlatformMutex_Create();
 
 #ifdef USE_WIN32
     #ifndef USE_JUCE
@@ -875,16 +875,16 @@ VSTCollection::VSTCollection(void* MainWindowHandle)
 VSTCollection::~VSTCollection()
 {
 	delete this->pMainHost;
-	ReleaseMutex(this->hMutex);
+	PlatformMutex_Unlock(this->hMutex);
 }
 void VSTCollection::AcquireSema()
 {
-    WaitForSingleObject(this->hMutex,INFINITE);
+    PlatformMutex_Lock(this->hMutex);
 }
 
 void VSTCollection::ReleaseSema()
 {
-    ReleaseMutex(this->hMutex);
+    PlatformMutex_Unlock(this->hMutex);
 }
 
 CVSTPlugin* VSTCollection::LoadPlugin(Object* owner, char* path)

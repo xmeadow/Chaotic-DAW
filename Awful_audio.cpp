@@ -23,9 +23,11 @@ extern void         ResetProcessing(bool resetmix);
 extern void         Place_Note(Instrument *instr, int note, float vol, unsigned long start_frame, unsigned long end_frame);
 extern void         UpdatePerBaseFrame(Playback* pb);
 extern void         ProcessSymbols4Gennote(Trigger* tg, long curr_frame, float* freq_active, bool* skip_and_continue, bool* skip);
+#ifdef USE_WIN32
 extern PaError      PortAudio_Init();
 extern PaError      PortAudio_Deinit();
 extern PaError      PortAudio_Start();
+#endif
 extern void			PlayMain();
 extern void         StopMain(bool forceresetmix);
 void                MixPreviewData(float* dataL, float* dataR);
@@ -39,10 +41,12 @@ float               Sinc_Interpolate(float* Yi, double dX, unsigned int num);
 extern void         ResetUnstableElements();
 extern void         ResetPlacedEnvelopes();
 
+#ifdef USE_WIN32
 /* Main callback function called by portAudio when it needs to fill sample buffer with next chunk of data */
 static int          PortAudio_StreamCallback(const void  *inputBuffer, void  *outputBuffer,
                                                     unsigned long   framesPerBuffer, const PaStreamCallbackTimeInfo*  timeInfo,
                                                     PaStreamCallbackFlags   statusFlags, void  *userData);
+#endif
 
 /* Function provided to Renderer module as callback filling in sample buffer */
 static RNDR_StreamCode Render_Callback(void *sample_buff, unsigned long frameCount);
@@ -52,12 +56,14 @@ void                CommonAudioCallback(const void* inputBuffer, void* outputBuf
 
 long                curr_frame;
 
+#ifdef USE_WIN32
 PaStream           *Stream;					// PortAudio stream
 //Parameters of active selected output audio device
 PaStreamParameters  outputParameters;
 //Parameters of active selected input audio device
 PaStreamParameters  inputParameters;
 PaTime              CurrentTime = 0;
+#endif
 
 float               databuff[MAX_BUFF_SIZE*2];
 
@@ -970,6 +976,7 @@ void GeStereoSampleData(Sample* sample, double cursor_pos, float* dataL, float* 
     }
 }
 
+#ifdef USE_WIN32
 void PortAudio_UpdateDevices(int out_device_idx, int in_device_idx)
 {
     inputParameters.device = (PaDeviceIndex) in_device_idx;
@@ -1090,6 +1097,7 @@ PaError PortAudio_Deinit()
 
     return err;
 }
+#endif // USE_WIN32
 
 void PortAudio_SetBufferSize(float BufSize)
 {
@@ -1172,7 +1180,7 @@ RNDR_StreamCode Render_Callback(void *sample_buff, unsigned long frameCount)
 
 void CommonAudioCallback(const void* inputBuffer, void* outputBuffer, unsigned long framesPerBuffer)
 {
-    WaitForSingleObject(hAudioProcessMutex, INFINITE);
+    PlatformMutex_Lock(hAudioProcessMutex);
 
     // Cast data passed through stream to our structure.
     float          *out = (float*)outputBuffer;
@@ -1479,9 +1487,10 @@ void CommonAudioCallback(const void* inputBuffer, void* outputBuffer, unsigned l
     if(mutemixing)
         MixMute = false;
 
-    ReleaseMutex(hAudioProcessMutex);
+    PlatformMutex_Unlock(hAudioProcessMutex);
 }
 
+#ifdef USE_WIN32
 /* This routine will be called by the PortAudio engine when audio is needed.
 ** It may be called at interrupt level on some machines so don't do anything
 ** that could mess up the system like calling malloc() or free().
@@ -1497,6 +1506,7 @@ static int PortAudio_StreamCallback(const void   *inputBuffer,
 
     return paContinue;
 }
+#endif // USE_WIN32
 
 #define Params
 

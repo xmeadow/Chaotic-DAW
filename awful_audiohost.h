@@ -11,8 +11,9 @@ typedef enum
 	AW_HOST_DEVICE_GET_ERROR
 } AW_HOST_ERROR_CODE_T;
 
-
+#ifdef USE_WIN32
 extern AW_HOST_ERROR_CODE_T Host_GetDeviceCount(int *count);
 extern AW_HOST_ERROR_CODE_T Host_GetDeviceInfo(const PaDeviceInfo **ppDevInfo, int index);
+#endif
 
 #endif /* _AWFUL_AUDIOHOST_ */

@@ -26,6 +26,13 @@
 #ifndef SNDFILE_H
 #define SNDFILE_H
 
+// On Linux, use the system-installed sndfile header instead of this bundled Windows version
+#if defined(LINUX) || defined(USE_LINUX) || (defined(__linux__) && !defined(_WIN32))
+#undef SNDFILE_H
+#include </usr/include/sndfile.h>
+#define SNDFILE_H
+#else
+
 /* This is the version 1.0.X header file. */
 #define	SNDFILE_1
 
@@ -618,5 +625,7 @@ void	sf_write_sync	(SNDFILE *sndfile) ;
 #ifdef __cplusplus
 }		/* extern "C" */
 #endif	/* __cplusplus */
+
+#endif // !Linux (end of Windows-only sndfile content)
 
 #endif	/* SNDFILE_H */

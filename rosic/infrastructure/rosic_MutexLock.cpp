@@ -1,4 +1,5 @@
 #include "rosic_MutexLock.h"
+#include <cstring>
 using namespace rosic;
 
 MutexLock::MutexLock(char* mutexName)

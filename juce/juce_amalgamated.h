@@ -10127,7 +10127,7 @@ public:
             lock.enter();
 
             this->granularity = other.granularity;
-            ensureAllocatedSize (other.size());
+            this->ensureAllocatedSize (other.size());
             numUsed = other.numUsed;
             memcpy (this->elements, other.elements, numUsed * sizeof (ElementType));
             minimiseStorageOverheads();

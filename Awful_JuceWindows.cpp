@@ -1,6 +1,61 @@
 
 #include "VSTCollection.h"
 #include "awful_jucewindows.h"
+
+#if JUCE_LINUX
+// Minimal X11 type stubs for VST plugin window hosting (deferred on Linux)
+// We avoid including <X11/Xlib.h> directly because its typedefs (Cursor, Font,
+// Drawable, Time) conflict with JUCE and project class names.
+typedef unsigned long XID;
+typedef XID Window;
+typedef struct _XDisplay Display;
+typedef unsigned long Atom;
+typedef unsigned long X11Time;
+#define CurrentTime 0L
+#define Expose      12
+#define ButtonPress 4
+#define ButtonRelease 5
+#define MotionNotify 6
+#define EnterNotify 7
+#define LeaveNotify 8
+#define False       0
+#define True        1
+#define None        0L
+#define NotifyNormal  0
+#define NotifyAncestor 0
+
+// Minimal XEvent struct with just enough fields for the VST window code
+struct XExposeEvent { int type; Display* display; Window window; int x, y, width, height; };
+struct XButtonEvent { int type; Display* display; Window window; Window root; X11Time time; int x, y, x_root, y_root; unsigned int state, button; };
+struct XMotionEvent { int type; Display* display; Window window; Window root; X11Time time; int x, y, x_root, y_root; unsigned int state; char is_hint; };
+struct XCrossingEvent { int type; Display* display; Window window; Window root; X11Time time; int x, y, x_root, y_root; int mode, detail; int focus; };
+struct XKeyEvent { int type; Display* display; Window window; Window root; X11Time time; int x, y, x_root, y_root; unsigned int state, keycode; };
+typedef union _XEvent {
+    int type;
+    XExposeEvent xexpose;
+    XButtonEvent xbutton;
+    XMotionEvent xmotion;
+    XCrossingEvent xcrossing;
+    XKeyEvent xkey;
+} XEvent;
+typedef void (*EventProcPtr)(XEvent* ev);
+
+static Display* display = NULL;
+static Window getChildWindow(Window) { return 0; }
+static void* getPropertyFromXWindow(Window, Atom) { return NULL; }
+static Atom XInternAtom(Display*, const char*, int) { return 0; }
+static void XMapRaised(Display*, Window) {}
+static void XResizeWindow(Display*, Window, unsigned int, unsigned int) {}
+static void XMoveWindow(Display*, Window, int, int) {}
+static int XSendEvent(Display*, Window, int, long, XEvent*) { return 0; }
+static int XFlush(Display*) { return 0; }
+static Window RootWindow(Display*, int) { return 0; }
+static int DefaultScreen(Display*) { return 0; }
+static void translateJuceToXButtonModifiers(const MouseEvent&, XEvent&) {}
+static void translateJuceToXCrossingModifiers(const MouseEvent&, XEvent&) {}
+static void translateJuceToXMotionModifiers(const MouseEvent&, XEvent&) {}
+static void translateJuceToXMouseWheelModifiers(const MouseEvent&, float, XEvent&) {}
+#endif
 #include "awful_preview.h"
 #include "awful_cursorandmouse.h"
 #include "awful_utils_common.h"
@@ -794,9 +849,9 @@ AboutComponent::AboutComponent()
 
     PlaceTxtLabel1("Chaotic also uses the following additional libraries:", 
                     x1, y1 + 36 + 12 + 12 + 12 + 12 + 12, clr);
-    PlaceTxtLabel1("    - Libsndfile library © by Eric de Castro Lopo;", 
+    PlaceTxtLabel1("    - Libsndfile library ï¿½ by Eric de Castro Lopo;", 
                     x1, y1 + 36 + 12 + 12 + 12 + 12 + 12 + 12, clr);
-    PlaceTxtLabel1("    - JUCE library © by Raw Material Software", 
+    PlaceTxtLabel1("    - JUCE library ï¿½ by Raw Material Software", 
                     x1, y1 + 36 + 12 + 12 + 12 + 12 + 12 + 12 + 12, clr);
 
     HyperlinkButton* hbutt = new HyperlinkButton(T("www.rs-met.com"), URL(T("http://rs-met.com")));
