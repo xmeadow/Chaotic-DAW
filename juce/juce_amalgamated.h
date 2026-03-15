@@ -1118,9 +1118,8 @@ forcedinline uint32 swapByteOrder (uint32 n) throw()
     // Mac version
     return CFSwapInt32 (n);
 #elif JUCE_GCC
-    // Inpenetrable GCC version..
-    asm("bswap %%eax" : "=a"(n) : "a"(n));
-    return n;
+    // GCC builtin version (works on all architectures)
+    return __builtin_bswap32 (n);
 #elif JUCE_USE_INTRINSICS
     // Win32 intrinsics version..
     return _byteswap_ulong (n);

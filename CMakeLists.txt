@@ -100,8 +100,9 @@ if(USE_WIN32)
         "${ROOT}/External/win/pa_win_util.c"
     )
 
-    # ASIO SDK contains 32-bit x86 inline assembly — exclude on 64-bit
-    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+    # ASIO SDK: only available on 32-bit AND requires proprietary Steinberg SDK
+    if(CMAKE_SIZEOF_VOID_P EQUAL 4 AND EXISTS "${ROOT}/ASIOSDK2/common/asio.cpp")
+        set(HAS_ASIO TRUE)
         set(PORTAUDIO_BACKENDS
             "${ROOT}/External/asio/pa_asio.cpp"
             "${ROOT}/External/asio/iasiothiscallresolver.cpp"
@@ -115,11 +116,15 @@ if(USE_WIN32)
             "${ROOT}/ASIOSDK2/host/pc/asiolist.cpp"
         )
     else()
+        set(HAS_ASIO FALSE)
         set(PORTAUDIO_BACKENDS
             "${ROOT}/External/wasapi/pa_win_wasapi.cpp"
             "${ROOT}/External/wmme/pa_win_wmme.c"
         )
         set(ASIO_SOURCES "")
+        if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+            message(STATUS "ASIO SDK not found — building without ASIO support")
+        endif()
     endif()
 
     set(RESOURCE_FILE "${ROOT}/packaging/windows/Awful.rc")
@@ -166,7 +171,7 @@ if(USE_WIN32)
         ${ROOT}/External/common
         ${ROOT}/External/win
     )
-    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+    if(HAS_ASIO)
         target_include_directories(${PROJECT_NAME} PRIVATE
             ${ROOT}/ASIOSDK2/common
             ${ROOT}/ASIOSDK2/host
@@ -195,8 +200,7 @@ if(USE_WIN32)
         PA_NO_DS=1
         USE_WIN32=1
     )
-    # ASIO only available on 32-bit (SDK uses x86 inline asm)
-    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+    if(HAS_ASIO)
         list(APPEND COMMON_DEFINITIONS PA_USE_ASIO=1)
     else()
         list(APPEND COMMON_DEFINITIONS PA_USE_ASIO=0 PA_NO_ASIO=1 JUCE_ASIO=0)

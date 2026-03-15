@@ -121,6 +121,10 @@ vstsdk3/build*/
 *.lib
 *.def
 *.exp
+# But keep packaging import libs
+!packaging/windows/*.lib
+!packaging/windows/x64/*.lib
+!packaging/windows/x86/*.lib
 
 # ------------------------------------------------------------------------------
 # Temporary and Backup Files
