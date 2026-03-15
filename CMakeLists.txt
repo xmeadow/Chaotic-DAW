@@ -100,19 +100,27 @@ if(USE_WIN32)
         "${ROOT}/External/win/pa_win_util.c"
     )
 
-    set(PORTAUDIO_BACKENDS
-        "${ROOT}/External/asio/pa_asio.cpp"
-        "${ROOT}/External/asio/iasiothiscallresolver.cpp"
-        "${ROOT}/External/wasapi/pa_win_wasapi.cpp"
-        "${ROOT}/External/wmme/pa_win_wmme.c"
-    )
-
-    set(ASIO_SOURCES
-        "${ROOT}/ASIOSDK2/common/asio.cpp"
-        "${ROOT}/ASIOSDK2/common/combase.cpp"
-        "${ROOT}/ASIOSDK2/host/asiodrivers.cpp"
-        "${ROOT}/ASIOSDK2/host/pc/asiolist.cpp"
-    )
+    # ASIO SDK contains 32-bit x86 inline assembly — exclude on 64-bit
+    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+        set(PORTAUDIO_BACKENDS
+            "${ROOT}/External/asio/pa_asio.cpp"
+            "${ROOT}/External/asio/iasiothiscallresolver.cpp"
+            "${ROOT}/External/wasapi/pa_win_wasapi.cpp"
+            "${ROOT}/External/wmme/pa_win_wmme.c"
+        )
+        set(ASIO_SOURCES
+            "${ROOT}/ASIOSDK2/common/asio.cpp"
+            "${ROOT}/ASIOSDK2/common/combase.cpp"
+            "${ROOT}/ASIOSDK2/host/asiodrivers.cpp"
+            "${ROOT}/ASIOSDK2/host/pc/asiolist.cpp"
+        )
+    else()
+        set(PORTAUDIO_BACKENDS
+            "${ROOT}/External/wasapi/pa_win_wasapi.cpp"
+            "${ROOT}/External/wmme/pa_win_wmme.c"
+        )
+        set(ASIO_SOURCES "")
+    endif()
 
     set(RESOURCE_FILE "${ROOT}/packaging/windows/Awful.rc")
 else()
@@ -154,14 +162,18 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 if(USE_WIN32)
     target_include_directories(${PROJECT_NAME} PRIVATE
         ${ROOT}/packaging/windows
-        ${ROOT}/ASIOSDK2/common
-        ${ROOT}/ASIOSDK2/host
-        ${ROOT}/ASIOSDK2/host/pc
         ${ROOT}/External/include
-        ${ROOT}/External/asio
         ${ROOT}/External/common
         ${ROOT}/External/win
     )
+    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+        target_include_directories(${PROJECT_NAME} PRIVATE
+            ${ROOT}/ASIOSDK2/common
+            ${ROOT}/ASIOSDK2/host
+            ${ROOT}/ASIOSDK2/host/pc
+            ${ROOT}/External/asio
+        )
+    endif()
 endif()
 
 # ── Compile definitions ───────────────────────────────────────────────────────
@@ -177,13 +189,18 @@ if(USE_WIN32)
     list(APPEND COMMON_DEFINITIONS
         WIN32
         _WINDOWS
-        PA_USE_ASIO=1
         PA_USE_WASAPI=1
         PA_USE_WMME=1
         PA_USE_DS=0
         PA_NO_DS=1
         USE_WIN32=1
     )
+    # ASIO only available on 32-bit (SDK uses x86 inline asm)
+    if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+        list(APPEND COMMON_DEFINITIONS PA_USE_ASIO=1)
+    else()
+        list(APPEND COMMON_DEFINITIONS PA_USE_ASIO=0 PA_NO_ASIO=1 JUCE_ASIO=0)
+    endif()
 elseif(USE_LINUX)
     list(APPEND COMMON_DEFINITIONS
         LINUX
@@ -247,9 +264,9 @@ if(USE_WIN32)
     )
 
     # Bundled libsndfile for Windows
-    if(MINGW)
-        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1.lib")
-    elseif(MSVC)
+    if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1-x64.lib")
+    else()
         target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1.lib")
     endif()
 endif()

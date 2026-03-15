@@ -72,5 +72,8 @@ See `CMakeLists.txt` for additional build options and required compile definitio
 ## 📋 TODO / Future Improvements
 
 - Replace embedded **JUCE 1.50 amalgamated source** with a git submodule pointing to [https://github.com/juce-framework/JUCE](https://github.com/juce-framework/JUCE)
+- X11 VST GUI embedding** (currently stubbed — plugins render in DAW style instead)
+- Implement CLAP and VST3-Support
+- Add Recording of Sound
 ---
 *Chaotic DAW – achieve complex results with minimal interface friction.*

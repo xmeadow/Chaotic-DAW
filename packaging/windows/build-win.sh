@@ -2,28 +2,51 @@
 #
 # build-win.sh — Cross-compile Chaotic-DAW for Windows and package as ZIP
 #
-# Usage: ./packaging/windows/build-win.sh [version]
-#   e.g.: ./packaging/windows/build-win.sh 0.9.0
+# Usage: ./packaging/windows/build-win.sh [version] [32|64]
+#   e.g.: ./packaging/windows/build-win.sh 0.9.0 32   (default, 32-bit)
+#         ./packaging/windows/build-win.sh 0.9.0 64   (64-bit)
 #
 # Prerequisites:
-#   sudo apt install g++-mingw-w64-i686-win32 zip
+#   32-bit: sudo apt install g++-mingw-w64-i686-win32 zip
+#   64-bit: sudo apt install g++-mingw-w64-x86-64-win32 zip
 #
 set -euo pipefail
 
 VERSION="${1:-0.9.0}"
+ARCH="${2:-32}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-BUILD_DIR="$PROJECT_DIR/build_win32"
-PKG_NAME="Chaotic-DAW_${VERSION}_win32"
-PKG_DIR="$PROJECT_DIR/$PKG_NAME"
-TOOLCHAIN="$SCRIPT_DIR/mingw-toolchain.cmake"
 
-echo "=== Cross-compiling Chaotic-DAW ${VERSION} for Windows ==="
+if [ "$ARCH" = "64" ]; then
+    TRIPLET="x86_64-w64-mingw32"
+    TOOLCHAIN="$SCRIPT_DIR/mingw-toolchain-x86_64.cmake"
+    BUILD_DIR="$PROJECT_DIR/build_win64"
+    PKG_NAME="Chaotic-DAW_${VERSION}_win64"
+    # 64-bit uses seh exceptions, not dwarf
+    GCC_DLL="libgcc_s_seh-1.dll"
+elif [ "$ARCH" = "32" ]; then
+    TRIPLET="i686-w64-mingw32"
+    TOOLCHAIN="$SCRIPT_DIR/mingw-toolchain.cmake"
+    BUILD_DIR="$PROJECT_DIR/build_win32"
+    PKG_NAME="Chaotic-DAW_${VERSION}_win32"
+    GCC_DLL="libgcc_s_dw2-1.dll"
+else
+    echo "ERROR: Invalid architecture '$ARCH'. Use 32 or 64."
+    exit 1
+fi
+
+PKG_DIR="$PROJECT_DIR/$PKG_NAME"
+
+echo "=== Cross-compiling Chaotic-DAW ${VERSION} for Windows ${ARCH}-bit ==="
 
 # --- Check prerequisites ---
-if ! command -v i686-w64-mingw32-g++-win32 &>/dev/null; then
-    echo "ERROR: MinGW cross-compiler not found."
-    echo "Install with: sudo apt install g++-mingw-w64-i686-win32"
+if ! command -v ${TRIPLET}-g++-win32 &>/dev/null; then
+    echo "ERROR: MinGW ${ARCH}-bit cross-compiler not found."
+    if [ "$ARCH" = "64" ]; then
+        echo "Install with: sudo apt install g++-mingw-w64-x86-64-win32"
+    else
+        echo "Install with: sudo apt install g++-mingw-w64-i686-win32"
+    fi
     exit 1
 fi
 if ! command -v zip &>/dev/null; then
@@ -46,7 +69,7 @@ cmake "$PROJECT_DIR" \
 make -j"$(nproc)"
 
 # Strip debug symbols
-i686-w64-mingw32-strip --strip-unneeded Chaotic-DAW.exe
+${TRIPLET}-strip --strip-unneeded Chaotic-DAW.exe
 
 # --- Create package directory ---
 echo "[2/4] Assembling package..."
@@ -70,10 +93,10 @@ do
 done
 
 # MinGW runtime DLLs (needed for the exe to run)
-MINGW_SYSROOT="/usr/lib/gcc/i686-w64-mingw32"
+MINGW_SYSROOT="/usr/lib/gcc/${TRIPLET}"
 MINGW_VERSION=$(ls "$MINGW_SYSROOT" 2>/dev/null | sort -V | tail -1)
 if [ -n "$MINGW_VERSION" ]; then
-    for dll in libgcc_s_dw2-1.dll libstdc++-6.dll; do
+    for dll in "$GCC_DLL" libstdc++-6.dll; do
         SRC="$MINGW_SYSROOT/$MINGW_VERSION/$dll"
         if [ -f "$SRC" ]; then
             cp "$SRC" "$PKG_DIR/"
@@ -81,8 +104,8 @@ if [ -n "$MINGW_VERSION" ]; then
     done
 fi
 # Also check the mingw lib directory
-for dll in libgcc_s_dw2-1.dll libstdc++-6.dll libwinpthread-1.dll; do
-    SRC="/usr/i686-w64-mingw32/lib/$dll"
+for dll in "$GCC_DLL" libstdc++-6.dll libwinpthread-1.dll; do
+    SRC="/usr/${TRIPLET}/lib/$dll"
     if [ -f "$SRC" ] && [ ! -f "$PKG_DIR/$dll" ]; then
         cp "$SRC" "$PKG_DIR/"
     fi

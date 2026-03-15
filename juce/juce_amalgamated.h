@@ -335,6 +335,12 @@
     #else
       #define JUCE_32BIT 1
     #endif
+  #elif defined(__GNUC__)
+    #ifdef __x86_64__
+      #define JUCE_64BIT 1
+    #else
+      #define JUCE_32BIT 1
+    #endif
   #endif
 
   #ifdef _DEBUG
