@@ -114,7 +114,7 @@ if(USE_WIN32)
         "${ROOT}/ASIOSDK2/host/pc/asiolist.cpp"
     )
 
-    set(RESOURCE_FILE "${ROOT}/Awful.rc")
+    set(RESOURCE_FILE "${ROOT}/packaging/windows/Awful.rc")
 else()
     # Non‑Windows: no PortAudio/ASIO sources
     set(PORTAUDIO_CORE "")
@@ -247,9 +247,9 @@ if(USE_WIN32)
 
     # Bundled libsndfile for Windows
     if(MINGW)
-        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/libsndfile-1.lib")
+        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1.lib")
     elseif(MSVC)
-        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/libsndfile-1.lib")
+        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1.lib")
     endif()
 endif()
 

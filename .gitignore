@@ -113,7 +113,6 @@ ASIOSDK2/build*/
 vstsdk3/build*/
 
 # Windows DLLs and libs (use system libraries on Linux)
-*.dll
 *.lib
 *.def
 *.exp

@@ -1,5 +1,7 @@
 #include "stdafx.h"
+#ifdef USE_WIN32
 #include "resource.h"
+#endif
 
 #include "awful_preview.h"
 #include "awful_cursorandmouse.h"
