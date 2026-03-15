@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Chaotic DAW
+Comment=Digital Audio Workstation with VST support
+Exec=chaotic-daw
+Icon=chaotic-daw
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Music;
+MimeType=application/x-chaotic-daw;
+Keywords=music;audio;daw;sequencer;synthesizer;midi;vst;

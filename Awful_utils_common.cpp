@@ -744,7 +744,7 @@ float CalcFreqRatio(int semitones)
 
 /////////////////////////////////////////////
 // Certain frame, corresponding to certain tick. Depends on BPM.
-inline long Tick2Frame(float tick)
+long Tick2Frame(float tick)
 {
     return (unsigned long)(tick*frames_per_tick);
 }
