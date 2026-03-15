@@ -153,6 +153,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 if(USE_WIN32)
     target_include_directories(${PROJECT_NAME} PRIVATE
+        ${ROOT}/packaging/windows
         ${ROOT}/ASIOSDK2/common
         ${ROOT}/ASIOSDK2/host
         ${ROOT}/ASIOSDK2/host/pc
