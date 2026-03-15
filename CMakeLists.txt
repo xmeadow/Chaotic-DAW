@@ -265,7 +265,7 @@ if(USE_WIN32)
 
     # Bundled libsndfile for Windows
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1-x64.lib")
+        target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/x64/libsndfile-1-x64.lib")
     else()
         target_link_libraries(${PROJECT_NAME} PRIVATE "${ROOT}/packaging/windows/libsndfile-1.lib")
     endif()

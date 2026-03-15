@@ -46,6 +46,9 @@ Makefile
 [Oo]ut/
 x64/
 x86/
+# But keep packaging DLLs
+!packaging/windows/x64/
+!packaging/windows/x86/
 [Ww]in32/
 
 # Code::Blocks

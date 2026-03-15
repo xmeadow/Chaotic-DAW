@@ -79,18 +79,34 @@ mkdir -p "$PKG_DIR"
 # Binary
 cp "$BUILD_DIR/Chaotic-DAW.exe" "$PKG_DIR/"
 
-# Runtime DLLs from packaging/windows
-for dll in \
-    libFLAC-0.dll \
-    libsndfile-1.dll \
-    libvorbis-0.dll \
-    libvorbisfile-3.dll \
-    zlib1.dll
-do
-    if [ -f "$SCRIPT_DIR/$dll" ]; then
-        cp "$SCRIPT_DIR/$dll" "$PKG_DIR/"
-    fi
-done
+# Runtime DLLs
+if [ "$ARCH" = "64" ]; then
+    DLL_DIR="$SCRIPT_DIR/x64"
+else
+    DLL_DIR="$SCRIPT_DIR"
+fi
+
+if [ "$ARCH" = "64" ]; then
+    # 64-bit: single libsndfile DLL (ogg/flac/vorbis statically linked in)
+    for dll in libsndfile-1.dll; do
+        if [ -f "$DLL_DIR/$dll" ]; then
+            cp "$DLL_DIR/$dll" "$PKG_DIR/"
+        fi
+    done
+else
+    # 32-bit: separate DLLs
+    for dll in \
+        libFLAC-0.dll \
+        libsndfile-1.dll \
+        libvorbis-0.dll \
+        libvorbisfile-3.dll \
+        zlib1.dll
+    do
+        if [ -f "$DLL_DIR/$dll" ]; then
+            cp "$DLL_DIR/$dll" "$PKG_DIR/"
+        fi
+    done
+fi
 
 # MinGW runtime DLLs (needed for the exe to run)
 MINGW_SYSROOT="/usr/lib/gcc/${TRIPLET}"
