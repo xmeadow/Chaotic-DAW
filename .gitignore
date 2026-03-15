@@ -177,7 +177,12 @@ TestResults/
 *.psd
 Graphic/
 CodeBlocks/
-mingw-toolchain.cmake
+
+# But keep packaging resources
+!packaging/windows/*.rc
+!packaging/windows/*.ico
+!packaging/windows/*.cur
+!packaging/windows/mingw-toolchain*.cmake
 
 # Backup copies of modified files
 *.win
