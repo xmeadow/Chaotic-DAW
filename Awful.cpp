@@ -13338,12 +13338,30 @@ public:
 
         // Now configure and start audio device
 #ifdef USE_JUCE_AUDIO
+        printf("[Audio] Initializing JUCE audio device manager...\n"); fflush(stdout);
         audioDeviceManager = new CAudioDeviceManager;
-        audioDeviceManager->initialise (0, // number of input channels
+        String audioError = audioDeviceManager->initialise (0, // number of input channels
                                         2, // number of output channels
                                         xmlAudio,
                                         true  // select default device on failure
                                         );
+        if (audioError.isNotEmpty()) {
+            printf("[Audio] ERROR: %s\n", (const char*)audioError); fflush(stdout);
+        } else {
+            printf("[Audio] Device initialized OK\n"); fflush(stdout);
+        }
+
+        AudioIODevice* currentDevice = audioDeviceManager->getCurrentAudioDevice();
+        if (currentDevice) {
+            printf("[Audio] Device: %s, SampleRate: %.0f, BufferSize: %d\n",
+                   (const char*)currentDevice->getName(),
+                   currentDevice->getCurrentSampleRate(),
+                   currentDevice->getCurrentBufferSizeSamples());
+            fflush(stdout);
+        } else {
+            printf("[Audio] WARNING: No audio device available!\n"); fflush(stdout);
+        }
+
         audioCallBack = new AudioCallback;
 
         audioDeviceManager->addAudioCallback(audioCallBack);
@@ -13354,6 +13372,7 @@ public:
             CAudioDeviceManager::AudioDeviceSetup setup;
             audioDeviceManager->getAudioDeviceSetup(setup);
             setup.bufferSize = gBuffLen;
+            printf("[Audio] Setting buffer size to %d\n", gBuffLen); fflush(stdout);
             audioDeviceManager->setAudioDeviceSetup(setup, false);
         }
 #else
