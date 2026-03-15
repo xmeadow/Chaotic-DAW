@@ -2588,7 +2588,7 @@ BEGIN_JUCE_NAMESPACE
 
 #elif JUCE_GCC
 
-  #if JUCE_USE_GCC_ATOMIC_INTRINSICS
+  #if JUCE_USE_GCC_ATOMIC_INTRINSICS || !(defined(__i386__) || defined(__x86_64__))
     forcedinline void atomicIncrement (int& variable) throw()           { __sync_add_and_fetch (&variable, 1); }
     forcedinline int atomicIncrementAndReturn (int& variable) throw()   { return __sync_add_and_fetch (&variable, 1); }
     forcedinline void atomicDecrement (int& variable) throw()           { __sync_add_and_fetch (&variable, -1); }
