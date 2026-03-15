@@ -8,7 +8,7 @@
 set -euo pipefail
 
 VERSION="${1:-0.9.0}"
-ARCH="amd64"
+ARCH="$(dpkg --print-architecture)"
 PKG_NAME="chaotic-daw"
 PKG_DIR="${PKG_NAME}_${VERSION}_${ARCH}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"

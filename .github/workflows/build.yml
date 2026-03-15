@@ -1,0 +1,120 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+    tags: ['v*']
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+env:
+  # For tags like v0.9.1, version becomes 0.9.1
+  # For branch builds, version becomes 0.0.0-ci.<run_number>
+  VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || format('0.0.0-ci.{0}', github.run_number) }}
+
+jobs:
+  # ── Linux native builds ──────────────────────────────────────────────────────
+  linux:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-24.04
+          - arch: arm64
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    name: Linux (${{ matrix.arch }})
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine version
+        id: ver
+        run: |
+          V="${{ env.VERSION }}"
+          # Strip leading 'v' from tag
+          echo "version=${V#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential cmake pkg-config \
+            libasound2-dev \
+            libjack-jackd2-dev \
+            libx11-dev libxext-dev libxrandr-dev libxinerama-dev \
+            libxcursor-dev libxi-dev \
+            libsndfile1-dev \
+            libfreetype-dev \
+            libcurl4-openssl-dev \
+            libgl-dev
+
+      - name: Build and package .deb
+        run: bash packaging/linux/build-deb.sh ${{ steps.ver.outputs.version }}
+
+      - name: Upload .deb
+        uses: actions/upload-artifact@v4
+        with:
+          name: chaotic-daw-linux-${{ matrix.arch }}
+          path: chaotic-daw_*.deb
+
+  # ── Windows cross-compile builds ─────────────────────────────────────────────
+  windows:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: "32"
+            label: win32
+            runner: ubuntu-24.04
+            pkg: g++-mingw-w64-i686-win32
+          - arch: "64"
+            label: win64
+            runner: ubuntu-24.04
+            pkg: g++-mingw-w64-x86-64-win32
+    runs-on: ${{ matrix.runner }}
+    name: Windows (${{ matrix.label }})
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine version
+        id: ver
+        run: |
+          V="${{ env.VERSION }}"
+          echo "version=${V#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Install MinGW toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ${{ matrix.pkg }} cmake zip
+
+      - name: Build and package
+        run: bash packaging/windows/build-win.sh ${{ steps.ver.outputs.version }} ${{ matrix.arch }}
+
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: chaotic-daw-${{ matrix.label }}
+          path: Chaotic-DAW_*.zip
+
+  # ── Release (only on tagged pushes) ─────────────────────────────────────────
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [linux, windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/**/*.deb
+            artifacts/**/*.zip
+          generate_release_notes: true
