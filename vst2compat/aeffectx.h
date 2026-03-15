@@ -23,7 +23,7 @@ typedef int64_t  VstInt64;
 typedef intptr_t VstIntPtr;
 
 /* AEffect magic */
-#define kEffectMagic  ('V' | ('s' << 8) | ('t' << 16) | ('P' << 24))
+#define kEffectMagic  (('V' << 24) | ('s' << 16) | ('t' << 8) | 'P')
 
 /* Forward declarations */
 struct AEffect;

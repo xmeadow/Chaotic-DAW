@@ -998,7 +998,9 @@ bool VSTCollection::CheckPlugin(char *path, bool *isGenerator, char* name)
     bool ret_val = false;
     long index   = 0;
 
+    printf("[VST-Check] LoadPlugin('%s')...\n", path); fflush(stdout);
     index = this->pMainHost->LoadPlugin(path);
+    printf("[VST-Check] LoadPlugin returned index=%ld\n", index); fflush(stdout);
 
     if (index != -1)
     {

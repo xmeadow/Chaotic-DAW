@@ -11831,8 +11831,6 @@ void GetStartupDir()
             strcpy(szWorkingDirectory, "./");
         }
     }
-    printf("[GetStartupDir] szWorkingDirectory='%s'\n", szWorkingDirectory);
-    fflush(stdout);
 #endif
 }
 
@@ -12317,8 +12315,10 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
                 thread->setStatusMessage("Scanning: " + String(slash ? slash + 1 : filename));
             }
 #endif
+            printf("[VST-Scan] CheckPlugin('%s')...\n", filename); fflush(stdout);
             if (pVSTCollector->CheckPlugin(filename, &isGen, name) == true)
             {
+                printf("[VST-Scan] OK: name='%s' isGen=%d\n", name, isGen); fflush(stdout);
                 pEntry = new ModListEntry;
 
                 pEntry->subtype = ModSubtype_VSTPlugin;
@@ -12350,6 +12350,7 @@ void ScanDirForVST(char *path, XmlElement* xmlList, ScanThread* thread)
             }
             else
             {
+                printf("[VST-Scan] FAILED: CheckPlugin returned false\n"); fflush(stdout);
                 char * pName = NULL;
                 pEntry = new ModListEntry;
 
@@ -12513,6 +12514,17 @@ void Init_ScanForVST(ScanThread* thread)
             memset(temp_path, 0, sizeof(temp_path));
             strcpy(temp_path, VST_EXT_PATH_2);
             ScanDirForVST(temp_path, NULL, thread);
+
+#ifndef USE_WIN32
+            // Also scan ~/.vst/ on Linux
+            const char* home = getenv("HOME");
+            if (home != NULL)
+            {
+                memset(temp_path, 0, sizeof(temp_path));
+                sprintf(temp_path, "%s/.vst/", home);
+                ScanDirForVST(temp_path, NULL, thread);
+            }
+#endif
 
             _chdir(szWorkingDirectory);
 

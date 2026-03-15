@@ -82,12 +82,6 @@ AwfulMidiInputCallback* midiCallBack = NULL;
 
 void AudioCallback::audioDeviceIOCallback(const float** inputChannelData, int totalNumInputChannels, float** outputChannelData, int totalNumOutputChannels, int numSamples)
 {
-    static int dbg_count = 0;
-    if (dbg_count < 5) {
-        printf("[AudioCB] called: outChannels=%d, numSamples=%d\n", totalNumOutputChannels, numSamples);
-        fflush(stdout);
-        dbg_count++;
-    }
     //Random rnd(1);
     if(totalNumOutputChannels == 2)
     {

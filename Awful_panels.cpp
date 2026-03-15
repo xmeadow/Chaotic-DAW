@@ -1454,15 +1454,7 @@ void Browser::UpdateFileData()
     else if(brwmode == Browse_Samples)
     {
         currpath = samplespath;
-        {
-            char dbg_cwd[PATH_MAX];
-            getcwd(dbg_cwd, sizeof(dbg_cwd));
-            printf("[Browser] Browse_Samples: samplespath='%s' cwd='%s'\n", samplespath, dbg_cwd);
-            fflush(stdout);
-        }
         ScanDirForSamples(currpath);
-        printf("[Browser] Browse_Samples: entries=%d\n", current_num_entries);
-        fflush(stdout);
     }
     else if(brwmode == Browse_Projects)
     {

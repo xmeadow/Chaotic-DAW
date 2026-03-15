@@ -80,7 +80,11 @@ typedef PlatformMutexImpl*  PlatformMutex;
 
 static inline PlatformMutex PlatformMutex_Create_Func() {
     PlatformMutexImpl* m = new PlatformMutexImpl;
-    pthread_mutex_init(&m->mtx, NULL);
+    pthread_mutexattr_t attr;
+    pthread_mutexattr_init(&attr);
+    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
+    pthread_mutex_init(&m->mtx, &attr);
+    pthread_mutexattr_destroy(&attr);
     return m;
 }
 static inline void PlatformMutex_Lock_Func(PlatformMutex h) {
@@ -121,7 +125,7 @@ static inline void PlatformCS_Leave_Func(PlatformCriticalSection* cs) {
 
 // Dynamic library loading
 typedef void*               PlatformDynLib;
-#define PlatformDynLib_Load(path)       dlopen(path, RTLD_NOW | RTLD_LOCAL)
+#define PlatformDynLib_Load(path)       dlopen(path, RTLD_NOW | RTLD_LOCAL | RTLD_NODELETE)
 #define PlatformDynLib_Free(h)          dlclose(h)
 #define PlatformDynLib_GetProc(h, name) dlsym(h, name)
 
@@ -368,8 +372,6 @@ static inline HANDLE FindFirstFile(const char* lpFileName, WIN32_FIND_DATA* fd) 
 
     fh->dir = opendir(fh->dirpath);
     if (!fh->dir) {
-        printf("[FindFirstFile] opendir FAILED for '%s' (pattern='%s')\n", fh->dirpath, fh->pattern);
-        fflush(stdout);
         delete fh;
         return INVALID_HANDLE_VALUE;
     }

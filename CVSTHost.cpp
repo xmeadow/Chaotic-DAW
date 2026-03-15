@@ -492,7 +492,19 @@ AEffect *(*pMain)(long (*audioMaster)(AEffect *effect,
                                   void *ptr,
                                   float opt)) = 0;
 
+printf("[VST] Loading plugin: %s\n", name); fflush(stdout);
 hModule = PlatformDynLib_Load(name);     /* try to load the plugin            */
+
+if (!hModule) {
+#ifndef USE_WIN32
+    printf("[VST] dlopen FAILED: %s\n", dlerror()); fflush(stdout);
+#else
+    printf("[VST] LoadLibrary FAILED\n"); fflush(stdout);
+#endif
+}
+else {
+    printf("[VST] dlopen OK: hModule=%p\n", hModule); fflush(stdout);
+}
 
 if (hModule)                            /* if there, get its main() function */
 {
@@ -501,10 +513,12 @@ if (hModule)                            /* if there, get its main() function */
   if (!pMain)
     pMain = (AEffect * (*)(long (*)(AEffect *,long,long,long,void *,float)))
             PlatformDynLib_GetProc(hModule, "main");
+  printf("[VST] pMain=%p\n", (void*)pMain); fflush(stdout);
   }
 
 if (pMain)                              /* initialize effect                 */
 {
+    printf("[VST] Calling VSTPluginMain...\n"); fflush(stdout);
 #ifdef _MSC_VER
     __try
     {
@@ -521,20 +535,29 @@ if (pMain)                              /* initialize effect                 */
     }
     catch (...)
     {
+        printf("[VST] EXCEPTION during VSTPluginMain!\n"); fflush(stdout);
         pEffect = NULL;
     }
 #endif
+    printf("[VST] VSTPluginMain returned pEffect=%p\n", (void*)pEffect); fflush(stdout);
 
     if (pEffect == NULL)
     {
+        printf("[VST] pEffect is NULL after VSTPluginMain\n"); fflush(stdout);
         PlatformDynLib_Free(hModule);
         hModule = NULL;
     }
 }
+else {
+    printf("[VST] pMain is NULL - no entry point found\n"); fflush(stdout);
+}
 
                                         /* check for correctness             */
 if (pEffect && (pEffect->magic != kEffectMagic))
+{
+  printf("[VST] magic mismatch: got 0x%lx, expected 0x%lx\n", (long)pEffect->magic, (long)kEffectMagic); fflush(stdout);
   pEffect = NULL;
+}
 
 if (pEffect)
   {
